@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/table-style/table-view.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+
+</head>
+
+<body>
+
+
+    <style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+    <style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <style>
+        .error {
+            color: #e74c3c;
+            font-size: 0.9em;
+            margin-top: px;
+            font-weight: bold;
+        }
+    </style>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+                                <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li class="active"><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span class="favorites-badge"> {{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <section class="normal-breadcrumb set-bg" data-setbg="{% static 'web/img/JFDcZQ.webp' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <h2>Contact Us</h2>
+                        <p style="font-size:21px;">"Welcome to GameHub! We value your feedback and are here to assist you. Whether you have questions, need support, or want to share your thoughts about the games we review, feel free to reach out. Our team is ready to help make your experience with GameHub even better. Get in touch with us below!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Centering and responsive styling */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            margin: 0 auto;
+        }
+
+        .blog__details__form {
+
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Input and textarea styling */
+        .container1 input[type="text"],
+        .container1 textarea {
+            width: 100%; /* Keep full width */
+            padding: 15px; /* Increase padding for larger look */
+            font-size: 16px; /* Larger text size */
+            border: 1px solid #ccc; /* Soft border */
+            border-radius: 5px; /* Rounded corners */
+            margin-bottom: 15px; /* Space between elements */
+            transition: all 0.3s ease; /* Smooth transition for resizing */
+        }
+
+        .container1 textarea {
+            height: 120px; /* Set height for larger textarea */
+            resize: vertical; /* Allow resizing vertically only */
+        }
+
+        /* Button styling */
+        .site-btn {
+            background-color: #5cb85c; /* Custom button color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 5px;
+            padding: 12px 30px; /* Size of the button */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .site-btn:hover {
+            background-color: #4cae4c; /* Slightly darker on hover */
+        }
+    </style>
+
+    <!-- Header Section Begin -->
+    <!-- Include your existing header section here -->
+
+    <!-- Form Section -->
+
+    <section class="form-container">
+        <div class="container1">
+            <div class="blog__details__form">
+                <form action="{% url 'save_contact' %}" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <input name="name" type="text" placeholder="Name" value="{{data.name | default:''  }}">
+                            {% if error.name %}
+                                <p class="error">{{error.name}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <input name="mobile" type="tel" placeholder="Mobile" value="{{data.mobile | default:''  }}">
+                            {% if error.mobile %}
+                                <p class="error">{{error.mobile}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <input name="email" type="email" placeholder="Email" value="{{data.email | default:''  }}">
+                            {% if error.email %}
+                                <p class="error">{{error.email}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <input name="city" type="text" placeholder="City" value="{{data.city | default:''  }}">
+                            {% if error.city %}
+                                <p class="error">{{error.city}}</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea name="message" placeholder="Enquiry/Any questions?"></textarea>
+                            {% if error.message %}
+                                <p class="error">{{error.message}}</p>
+                            {% endif %}
+                            <button type="submit" class="site-btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+          <!-- Footer Section End -->
+
+          <!-- Search model Begin -->
+        <!-- Search model end -->
+
+        <!-- Js Plugins -->
+        <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'web/js/player.js' %}"></script>
+        <script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'web/js/mixitup.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+        <script>
+            function show() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+            }
+        </script>
+        <script>
+    document.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+            const href = target.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        }
+    });
+</script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        {% if messages %}
+            {% for i in messages %}
+               {% if i.tags == 'success' %}
+                   <script>
+                       swal('{{i}}','','success')
+                   </script>
+               {% elif i.tags == 'error' %}
+                   <script>
+                       swal('{{i}}','','error')
+                   </script>
+               {% elif i.tags == 'warning' %}
+                   <script>
+                       swal('{{i}}','','warning')
+                   </script>
+               {% else %}
+                   <script>
+                       swal('{{i}}','','info')
+                   </script>
+               {% endif %}
+            {% endfor %}
+        {% endif %}
+
+    </body>
+
+    </html>

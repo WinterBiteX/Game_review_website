@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'log/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'log/css/style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'log/login-image/lo_image.css' %}" rel="stylesheet">
+</head>
+<body>
+<style>
+    .error {
+        color: #e74c3c;
+        font-size: 0.9em;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    .form-input:focus {
+        border-bottom: 2px solid #3498db;
+    }
+
+    .form-input.error-field {
+        border-bottom: 2px solid #e74c3c;
+        background-color: transparent;
+    }
+</style>
+
+
+
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <form method="post" id="signup-form" class="signup-form" action="{% url 'save_user' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <h2>Create an account</h2>
+                    <p></p>
+                    <div class="form-group form-group-image">
+                        <label for="profile_picture">Upload your Image :</label>
+                        <div class="profile-picture-preview" id="profilePicturePreview" onclick="toggleImage()">
+                            <img id="previewImage" src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Image">
+                            <div class="upload-icon" id="uploadIcon">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                        </div>
+                        <input type="file" id="profile_picture" name="profile_picture" accept="image/*" class="profile-picture-input" onchange="showPreview(event)">
+                        <input type="hidden" id="profile_picture_status" name="profile_picture_status" value="default">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input {% if errors.name %}error-field{% endif %}" name="name" id="name" placeholder="Your Name" value="{{ data.name|default:'' }}"/>
+                        {% if errors.name %}
+                            <p class="error" style="color: red;">{{ errors.name }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input {% if errors.email %}error-field{% endif %}" name="email" id="email" placeholder="Email Address" value="{{ data.email|default:'' }}"/>
+                        {% if errors.email %}
+                            <p class="error" style="color: red;">{{ errors.email }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input {% if errors.mobile %}error-field{% endif %}" name="mobile" id="mobile" placeholder="Mobile Number" value="{{ data.mobile|default:'' }}"/>
+                        {% if errors.mobile %}
+                            <p class="error" style="color: red;">{{ errors.mobile }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input {% if errors.password %}error-field{% endif %}" name="password" id="password" placeholder="Password"/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        {% if errors.password %}
+                            <p class="error" style="color: red;">{{ errors.password }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input {% if errors.re_password %}error-field{% endif %}" name="re_password" id="re_password" placeholder="Confirm Password"/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        {% if errors.re_password %}
+                            <p class="error" style="color: red;">{{ errors.re_password }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term"/>
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="#" class="term-service">Terms of service</a></label>
+                        {% if errors.agree_term %}
+                            <p class="error" style="color: red;">{{ errors.agree_term }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Register"/>
+                        <a href="{% url 'user_login' %}" class="submit-link submit">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{% static 'log/vendor/jquery/jquery.min.js' %}"></script>
+
+    <script>
+        function toggleImage() {
+            const preview = document.getElementById('previewImage');
+            const fileInput = document.getElementById('profile_picture');
+            const uploadIcon = document.getElementById('uploadIcon');
+            const profileStatus = document.getElementById('profile_picture_status');
+            var defaultImagePath = "{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}";
+
+
+            if (preview.src.includes(defaultImagePath)) {
+                fileInput.click(); // Open file input to select a new image
+            } else {
+                preview.src = defaultImagePath;
+                uploadIcon.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+                fileInput.value = '';
+                profileStatus.value = 'default';
+                console.log("Profile status set to:", profileStatus.value);
+            }
+        }
+
+
+        function showPreview(event) {
+            const preview = document.getElementById('previewImage');
+            const uploadIcon = document.getElementById('uploadIcon');
+            const profileStatus = document.getElementById('profile_picture_status');
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result; // Update preview with the new image
+                    uploadIcon.innerHTML = '<i class="fas fa-times"></i>'; // Change icon to "remove" (X)
+                    profileStatus.value = 'changed';
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method = "post" action="{% url 'save_requirement' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Add Game Details here...</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Game Name</label>
+                        <select name="gname" class="form-select" id="exampleFormControlSelect1" aria-label="">
+                          {% for i in game %}
+                          <option>{{i.Game_Name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Minimum Operating System</label>
+                        <input name="minos" type="text" class="form-control" id="exampleFormControlInput" placeholder="Minimum Operating System">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Maximum Operating System</label>
+                        <input name="maxos" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tagline for game">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Minimum RAM</label>
+                        <input name="minram" type="text" class="form-control" id="exampleFormControlInput13" placeholder="Minimum RAM">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Maximum RAM</label>
+                        <input name="maxram" type="text" class="form-control" id="exampleFormControlInput132" placeholder="Maximum RAM">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Minimum Processor</label>
+                        <input name="minpro" type="text" class="form-control" id="exampleFormControlInput1321" placeholder="Minimum Processor">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Maximum Processor</label>
+                        <input name="maxpro" type="text" class="form-control" id="1" placeholder="Release Date">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Minimum Graphics</label>
+                        <input name="mingra" type="text" class="form-control" id="2" placeholder="Minimum Graphics">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Maximum Graphics</label>
+                        <input name="maxgra" type="text" class="form-control" id="31" placeholder="Developer">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Minimum Storage</label>
+                        <input name="minsto"  type="text" class="form-control" id="4" placeholder="Publisher">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Maximum Storage</label>
+                        <input name="maxsto" type="text" class="form-control" id="311" placeholder="Age Rating">
+                      </div>
+                      <div class="mb-3" >
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+</form>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+</body>
+</html>
+{% endblock %}
+

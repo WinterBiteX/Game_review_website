@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorites</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/name/game_name.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/view-button/view_button.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+</head>
+
+<body>
+
+
+    <!-- Header Section Begin -->
+    <style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+    <style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        .product__item__pic{
+            animation: rgb-border1 3s infinite;
+        }
+        @keyframes rgb-border1 {
+            0% {
+              box-shadow: 0 0 10px 2px red;
+              border: 5px solid red;
+            }
+            33% {
+              box-shadow: 0 0 10px 2px green;
+              border: 5px solid green;
+            }
+            66% {
+              box-shadow: 0 0 10px 2px blue;
+              border: 5px solid blue;
+            }
+            100% {
+              box-shadow: 0 0 10px 2px red;
+              border: 5px solid red;
+            }
+        }
+    </style>
+    <style>
+        .remove-favorite-btn {
+            background-color:
+            color: white;
+            padding: 10px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+        .remove-favorite-btn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+    </style>
+    <style>
+        #no-favorites-message {
+            text-align: center;
+            font-size: 24px;
+            color: #777;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+                                <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span id="fav_count" class="{% if fav_count %} favorites-badge {% endif %}"> {{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="{% url 'home_page' %}"><i class="fa fa-home"></i> Home</a>
+                        <a href="">Favorites</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Product Section Begin -->
+    <section class="product-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product__page__content">
+                        <div class="product__page__title">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-6">
+                                    <div class="section-title">
+                                        <h4>Favorites</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="favorites-container" class="row">
+                            {% if favorite %}
+                                {% for i in favorite %}
+                                    <div id="favorite-game-{{ i.id }}" class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="product__item">
+                                            <div class="product__item__pic set-bg" data-setbg="{{ i.Fav_Cover }}">
+                                                <div class="comment" style="background-color:red">
+                                                    <i class="fa fa-star"></i>{{ i.Fav_Overall }}/10
+                                                </div>
+                                                <div class="view" style="background-color:red">{{ i.Fav_Age }}</div>
+                                            </div>
+                                            <div class="product__item__text">
+                                                <h5 class="game-name">
+                                                    <a href="{% url 'game_details' i.Fav_ID %}">{{ i.Fav_Gname }}</a>
+                                                </h5>
+                                                <div style="text-align:center">
+                                                    <button class="remove-favorite-btn" onclick="removeFavorite({{ i.id }})">Remove from Favorites</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% else %}
+                                <div id="no-favorites-message-container">
+                                    <p id="no-favorites-message" style="margin-left:500px">No favorite games yet.</p>
+                                </div>
+                            {% endif %}
+                        </div>
+
+                    </div>
+<!--                    <div class="col-lg-7 col-md-4 col-sm-4">-->
+<!--                        <div class="btn__all">-->
+<!--                            <button id="toggle-button" class="toggle-button">View More</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+        <div class="search-results-container" id="search-results">
+
+        </div>
+    </div>
+ </div>
+
+<!-- Search model end -->
+
+
+
+
+<!-- Js Plugins -->
+<script src="{% static 'web/pagination/button-view.js' %}"></script>
+<script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/js/player.js' %}"></script>
+<script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'web/js/mixitup.min.js' %}"></script>
+<script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'web/js/main.js' %}"></script>
+<script>
+    function show() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+    }
+</script>
+<script>
+    document.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+            const href = target.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        }
+    });
+</script>
+<script>
+    function removeFavorite(favoriteId) {
+        let spanData = document.getElementById('fav_count')
+        fetch(`/remove_favorite/${favoriteId}/`, {
+            method: "POST",
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',  // CSRF token for security
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'removed') {
+                // Remove the game from the DOM
+                const favoriteGame = document.getElementById(`favorite-game-${favoriteId}`);
+                if (favoriteGame) {
+                    favoriteGame.remove();
+                    if(data.count>0){
+                        spanData.innerHTML = data.count
+                        SpanData.classList.add('favorites-badge')
+                    }else{
+                        spanData.innerHTML = ""
+                        spanData.classList.remove('favorites-badge')
+                    }
+
+                }
+
+
+                const favoritesContainer = document.getElementById('favorites-container');
+                if (favoritesContainer.children.length === 0) {
+                    const noFavoritesMessage = document.createElement('p');
+                    noFavoritesMessage.id = "no-favorites-message";
+                    noFavoritesMessage.style.marginLeft = '500px';
+                    noFavoritesMessage.textContent = "No favorite games yet.";
+                    favoritesContainer.appendChild(noFavoritesMessage);
+                }
+            } else {
+                console.error('Error:', data.message);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

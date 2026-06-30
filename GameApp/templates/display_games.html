@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+                <h5 class="card-header">Games</h5>
+                <div class="card-body">
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Game Category</th>
+                          <th>Cover Photo</th>
+                          <th>Title Name</th>
+                          <th>Tag- Line</th>
+                          <th>Short Description</th>
+                          <th>Gameplay Summary</th>
+                          <th>Genre</th>
+                          <th>Game Style</th>
+                          <th>Platform</th>
+                          <th>Release Date</th>
+                          <th>Game Mode</th>
+                          <th>Developer</th>
+                          <th>Publisher</th>
+                          <th>Age Rating</th>
+                          <th>Playtime</th>
+                          <th>Overall rating</th>
+                          <th>Download Link</th>
+                          <th>Image1</th>
+                          <th>Image2</th>
+                          <th>Image3</th>
+                          <th>Trailer</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in data %}
+                        <tr>
+                          <td>
+                            {{i.Game_Category}}
+                          </td>
+                          <td>
+                            <img src="{{i.Cover_Image.url}}" width="100px" height="100px">
+                          </td>
+                          <td>
+                            {{i.Game_Name}}
+                          </td>
+                          <td>{{i.Tag_Line}}</td>
+                          <td>{{i.Short_Description}}</td>
+                          <td>{{i.Summary}}</td>
+                          <td>{{i.Genre}}</td>
+                          <td>{{i.Game_Style}}</td>
+                          <td>{{i.Platform}}</td>
+                          <td>{{i.Release_Date}}</td>
+                          <td>{{i.Game_Mode}}</td>
+                          <td>{{i.Developer}}</td>
+                          <td>{{i.Publisher}}</td>
+                          <td>{{i.Age_Rating}}</td>
+                          <td>{{i.Play_Time}}</td>
+                          <td>{{i.Overall_Rating}}</td>
+                          <td>{{i.Download_Link}}</td>
+                          <td>
+                            <img src="{{i.Image1.url}}" width="100px" height="100px">
+                          </td>
+                          <td>
+                            <img src="{{i.Image2.url}}" width="100px" height="100px">
+                          </td>
+                          <td>
+                            <img src="{{i.Image3.url}}" width="100px" height="100px">
+                          </td>
+                          <td>
+                            <video width="200px" height="200px" controls>
+                                <source src="{{i.Trailer.url}}" type="video/mp4">
+                            </video>
+                          </td>
+
+                          <td>
+                            <a href="{% url 'edit_games' i.id %}">
+                              <button class="btn btn-primary">Edit</button>
+                            </a>
+                            <a href="{% url 'delete_games' i.id %}">
+                              <button class="btn btn-danger">Delete</button>
+                            </a>
+                          </td>
+                        </tr>
+                      {% endfor %}
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+{% endblock %}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'save_fan_favorites' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Adding Fan-Favorites of the Month.....</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Game Name</label>
+                        <input name="gname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Game Name">
+                      </div>
+                      <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                        <textarea name="description" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Upload Image</label>
+                        <input name="c_img" class="form-control" type="file" id="formFileMultiple" multiple="">
+                      </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Reason1</label>
+                        <input name="p1" type="text" class="form-control" id="exampleFormControlInpu" placeholder="Point1">
+                      </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Reason2</label>
+                        <input name="p2" type="text" class="form-control" id="exampleFormControlInp" placeholder="Point2">
+                      </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Reason3</label>
+                        <input name="p3" type="text" class="form-control" id="exampleFormControlIn" placeholder="Point3">
+                      </div>
+                      <div class="mb-3">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+</form>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+{% endblock %}

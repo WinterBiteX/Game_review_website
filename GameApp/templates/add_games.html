@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method = "post" action="{% url 'save_games' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Add Game Details here...</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Game Category</label>
+                        <select name="category" class="form-select" id="exampleFormControlSelect1" aria-label="">
+                          {% for i in data %}
+                          <option>{{i.Category_Name}}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Upload a Cover Photo</label>
+                        <input name="c_img" class="form-control" type="file" id="formFileMultiple" multiple="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Title of the game</label>
+                        <input name="title" type="text" class="form-control" id="exampleFormControlInput" placeholder="Title of the game">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tagline</label>
+                        <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tagline for game">
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label">Short Description</label>
+                        <textarea name="short" class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Short Description"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label">Gameplay Summary</label>
+                        <textarea name="summary" class="form-control" id="exampleFormControlTextarea12" rows="3" placeholder="Gameplay Summary"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Genre</label>
+                        <input name="genre" type="text" class="form-control" id="exampleFormControlInput13" placeholder="Genre">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Game Style</label>
+                        <input name="style" type="text" class="form-control" id="exampleFormControlInput132" placeholder="Game Style">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Platform</label>
+                        <input name="platform" type="text" class="form-control" id="exampleFormControlInput1321" placeholder="Platforms">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Release Date</label>
+                        <input name="r_date" type="text" class="form-control" id="1" placeholder="Release Date">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Game Mode</label>
+                        <input name="mode" type="text" class="form-control" id="2" placeholder="Game Mode">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Developer</label>
+                        <input name="devops" type="text" class="form-control" id="31" placeholder="Developer">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Publisher</label>
+                        <input name="publisher"  type="text" class="form-control" id="4" placeholder="Publisher">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Age Rating</label>
+                        <input name="age_rating" type="text" class="form-control" id="311" placeholder="Age Rating">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Average Playtime</label>
+                        <input name="play" type="text" class="form-control" id="32" placeholder="Average Playtime">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Overall Rating</label>
+                        <input name="overall" type="text" class="form-control" id="3" placeholder="Overall Rating">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Download Link</label>
+                        <input name="g_link" type="url" class="form-control" id="322" placeholder="Download Link">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Trailer</label>
+                        <input name="trailer" class="form-control" type="file" id="formFileMultiple12" multiple="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Image1</label>
+                        <input name="img1" class="form-control" type="file" id="formFileMultiple1" multiple="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Image2</label>
+                        <input name="img2" class="form-control" type="file" id="formFileMultiple2" multiple="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Image3</label>
+                        <input name="img3" class="form-control" type="file" id="formFileMultiple3" multiple="">
+                      </div>
+                      <div class="mb-3" >
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+</form>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+{% endblock %}

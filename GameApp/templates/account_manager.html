@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+                <h5 class="card-header">Accounts</h5>
+                <div class="card-body">
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Profile Picture</th>
+                          <th>Name</th>
+                          <th>Email Address</th>
+                          <th>Mobile Number</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in obj %}
+                        <tr>
+                          <td>
+                              {% if i.Profile_Image %}
+                                    <img src="{{i.Profile_Image.url}}" width="100px" height="100px">
+                              {% else %}
+                                    <img src="{% static 'admin/assets/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" width="100px" height="100px">
+                              {% endif %}
+                          </td>
+                          <td>
+                            {{i.Name}}
+                          </td>
+                          <td>{{i.Email}}</td>
+                          <td>{{i.Mobile}}</td>
+                          <td>
+                            <a href="{% url 'delete_account' i.id %}">
+                              <button class="btn btn-danger">Delete</button>
+                            </a>
+                          </td>
+                        </tr>
+                      {% endfor %}
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upcoming Game Details</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/table-style/table-view.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Header Section Begin -->
+    <style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+    <style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        .favorite-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            outline: none;
+        }
+
+        .favorite-btn:hover {
+            background-color: #ff3b3f; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .favorite-btn:active {
+            transform: scale(0.98); /* Slightly shrink when clicked */
+        }
+
+        .favorite-icon {
+            margin-right: 8px;
+            font-size: 20px; /* Star icon size */
+            transition: transform 0.3s ease;
+        }
+
+        .favorite-btn:hover .favorite-icon {
+            transform: rotate(360deg); /* Rotate the star on hover */
+        }
+    </style>
+    <style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+                                <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span class="favorites-badge"> {{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="{% url 'home_page' %}"><i class="fa fa-home"></i>Home</a>
+                        <a href="{% url 'game_page' %}">Games</a>
+                        <span>Upcoming Games</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Anime Section Begin -->
+    <section class="anime-details spad">
+        <div class="container">
+            <div class="anime__details__content">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="anime__details__pic set-bg" data-setbg="{{data.Up_Inside_Image.url}}">
+                            <div class="comment" style="background-color:red;font-weight:bold"><i class="fa fa-star"></i>{{data.Up_Overall_Rating}}/10</div>
+                            <div class="view" style="background-color:red;font-weight:bold">{{data.Up_Age_Rating}}</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="anime__details__text">
+                            <div class="anime__details__title">
+                                <h3>{{data.Up_Game_Name}}</h3>
+                                <span>{{data.Up_Tag_Line}}</span>
+                            </div>
+<!--                            <div class="anime__details__rating">-->
+<!--                                <button class="favorite-btn" onclick="addToFavorites()">-->
+<!--                                    <span class="favorite-icon">&#9733;</span> Add to Favorites-->
+<!--                                </button>-->
+<!--                            </div>-->
+                            <p><span style="font-weight:bold;color:red;">Short Description : </span>{{data.Up_Short_Description}}</p>
+                            <p><span style="font-weight:bold;color:red;">Summary : </span>{{data.Up_Summary}}</p>
+                            <div class="anime__details__widget">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul>
+                                            <li><span>Genre :</span> {{data.Up_Genre}}</li>
+                                            <li><span>GameStyle :</span> {{data.Up_Game_Style}}</li>
+                                            <li><span>Platform :</span> {{data.Up_Platform}}</li>
+                                            <li><span>Release Date :</span> {{data.Up_Release_Date}}</li>
+                                            <li><span>Game Mode:</span> {{data.Up_Game_Mode}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul>
+                                            <li><span>Developer :</span> {{data.Up_Developer}}</li>
+                                            <li><span>Publisher :</span> {{data.Up_Publisher}}</li>
+                                            <li><span>Age Rating :</span> {{data.Up_Age_Rating}}</li>
+                                            <li><span>Playtime :</span> {{data.Up_Play_Time}}</li>
+                                            <li><span>Overall Rating :</span> {{data.Up_Overall_Rating}}/10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="anime__details__btn">
+                                <a href="" class="follow-btn"><i class="fa fa-clock-o"></i> Coming Soon</a>
+                                <a href="{% url 'upcoming_trailer' data.id %}" class="follow-btn"><i class="fa fa-film"><span style="font-weight:bold"> Watch Trailer</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Anime Section End -->
+
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+  </footer>
+          <!-- Footer Section End -->
+
+          <!-- Search model Begin -->
+          <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch"><i class="icon_close"></i></div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
+            </div>
+        </div>
+        <!-- Search model end -->
+
+        <!-- Js Plugins -->
+        <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'web/js/player.js' %}"></script>
+        <script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'web/js/mixitup.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+        <script>
+    function show() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+    }
+</script>
+        <script>
+    document.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+            const href = target.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        }
+    });
+</script>
+
+    </body>
+
+    </html>
+

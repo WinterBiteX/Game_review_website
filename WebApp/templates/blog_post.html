@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Post</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/table-style/table-view.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/name/game_name.css' %}" type="text/css">
+
+</head>
+<style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+<style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+<style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+<body>
+    <!-- Page Preloder -->
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+<!--                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>-->
+<!--                                    <ul class="dropdown">-->
+<!--                                        <li><a href="./categories.html">Categories</a></li>-->
+<!--                                        <li><a href="./anime-details.html">Anime Details</a></li>-->
+<!--                                        <li><a href="./anime-watching.html">Anime Watching</a></li>-->
+<!--                                        <li><a href="./blog-details.html">Blog Details</a></li>-->
+<!--                                        <li><a href="./signup.html">Sign Up</a></li>-->
+<!--                                        <li><a href="./login.html">Login</a></li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+                                <li class="active"><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span class="favorites-badge">{{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Blog Details Section Begin -->
+    <style>
+        .features-list {
+          list-style-type: none;
+          padding-left: 10px;
+          margin-top: 15px;
+        }
+
+        .features-list li {
+          margin-bottom: 10px;
+          font-size: 1.1rem;
+          color:white;
+        }
+
+        .custom-icon {
+          font-size: 20px;
+          color: #333;
+          padding-right: 10px;
+        }
+    </style>
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="blog__details__title">
+                        <h5 style="color:white;font-weight:bold">All-Time Favorite Games by Gamers – Top Picks on GameHub<span> ({{formatted_date}})</span></h5>
+                        <h2 class="mt-5">GameHub’s Ultimate Top 5: Fan-Favorite Games of this Month!</h2>
+                        <div class="blog__details__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook-square"></i> Facebook</a>
+                            <a href="#" class="pinterest"><i class="fa fa-pinterest"></i> Pinterest</a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin-square"></i> Linkedin</a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter-square"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="blog__details__pic">
+                        <img src="{% static 'web/img/27-ps5-exclusives.avif' %}" alt="">
+                        <div class="blog__details__text mt-5">
+                            <p style="font-weight:bold">Welcome to GameHub’s Ultimate Top 5, where we spotlight this month’s fan-favorite games selected by YOU, the gamers! Every month, we scour through your votes, feedback, and epic gaming moments to bring you the absolute best. These are the games that have dominated the gaming community, earned the love of players everywhere, and continue to shape our world of gaming.
+                            Got a favorite game that didn’t make it? Don’t worry! You can help shape the list next month. But for now, let’s dive into the top 5 picks chosen by your fellow gamers this month!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="blog__details__content">
+                        <div class="blog__details__text">
+                            <h2 style="color:white;font-weight:bold">🔥This Month’s Fan-Favorites:</h2>
+                        </div>
+                        {% for i in data %}
+                        <div class="blog__details__item__text">
+                            <h4>
+                                {% if forloop.counter == 1 %}
+                                    🥇 #{{ forloop.counter }} {{ i.Fan_Game }}
+                                {% elif forloop.counter == 2 %}
+                                    🥈 #{{ forloop.counter }} {{ i.Fan_Game }}
+                                {% elif forloop.counter == 3 %}
+                                    🥉 #{{ forloop.counter }} {{ i.Fan_Game }}
+                                {% else %}
+                                    🏅 #{{ forloop.counter }} {{ i.Fan_Game }}
+                                {% endif %}
+                            </h4>
+                            <img src="{{i.Fan_Image.url}}" alt="">
+                            <p>{{i.Fan_Description}}</p>
+                            <h5 class="mt-3" style="color:white">What’s So Great About It:</h5>
+                              <ul class="features-list">
+                                  <li>
+                                      <span class="feature-icon custom-icon">⭕</span>
+                                      <strong style="color:orange;">{{i.Reason1}}</strong>
+                                  </li>
+                                  <li>
+                                      <span class="feature-icon custom-icon">⭕</span>
+                                      <strong style="color:orange;">{{i.Reason2}}</strong>
+                                  </li>
+                                  <li>
+                                      <span class="feature-icon custom-icon">⭕</span>
+                                      <strong style="color:orange;">{{i.Reason3}}</strong>
+                                  </li>
+
+                              </ul>
+                        </div>
+                        {% endfor %}
+                        <hr class="styled-hr">
+                        <style>
+                            .styled-hr {
+                              border: none;
+                              height: 1px;
+                              background-color: grey;
+                              margin: 20px 0;
+                            }
+                        </style>
+<!--                            <div class="blog__details__comment">-->
+<!--                                <h4>3 Comments</h4>-->
+<!--                                <div class="blog__details__comment__item">-->
+<!--                                    <div class="blog__details__comment__item__pic">-->
+<!--                                        <img src="img/blog/details/comment-1.png" alt="">-->
+<!--                                    </div>-->
+<!--                                    <div class="blog__details__comment__item__text">-->
+<!--                                        <span>Sep 08, 2020</span>-->
+<!--                                        <h5>John Smith</h5>-->
+<!--                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,-->
+<!--                                        adipisci velit, sed quia non numquam eius modi</p>-->
+<!--                                        <a href="#">Like</a>-->
+<!--                                        <a href="#">Reply</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="blog__details__comment__item blog__details__comment__item&#45;&#45;reply">-->
+<!--                                    <div class="blog__details__comment__item__pic">-->
+<!--                                        <img src="img/blog/details/comment-2.png" alt="">-->
+<!--                                    </div>-->
+<!--                                    <div class="blog__details__comment__item__text">-->
+<!--                                        <span>Sep 08, 2020</span>-->
+<!--                                        <h5>Elizabeth Perry</h5>-->
+<!--                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,-->
+<!--                                        adipisci velit, sed quia non numquam eius modi</p>-->
+<!--                                        <a href="#">Like</a>-->
+<!--                                        <a href="#">Reply</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="blog__details__comment__item">-->
+<!--                                    <div class="blog__details__comment__item__pic">-->
+<!--                                        <img src="img/blog/details/comment-3.png" alt="">-->
+<!--                                    </div>-->
+<!--                                    <div class="blog__details__comment__item__text">-->
+<!--                                        <span>Sep 08, 2020</span>-->
+<!--                                        <h5>Adrian Coleman</h5>-->
+<!--                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,-->
+<!--                                        adipisci velit, sed quia non numquam eius modi</p>-->
+<!--                                        <a href="#">Like</a>-->
+<!--                                        <a href="#">Reply</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div class="blog__details__form">
+                                <h4>💬 We Want to Hear From You!</h4>
+                                <p class="mt-3" style="color:white;font-size:16px;font-weight:bold;">Which game would you have added to this list? Maybe you have a game you think should be #1? Or maybe your #1 is missing? Drop your thoughts in the comments below! You can even share your own epic gaming moments—who knows, your feedback might just shape next month’s Ultimate Top 5!</p>
+                                <p class="mt-3" style="color:white;font-size:16px;font-weight:bold;">📢 Stay tuned for next month’s Ultimate Top 5! We love hearing your thoughts and can’t wait to see which games will take the top spots.</p>
+                                <h5 style="color:white">🎮 Game on, gamers! 🔥</h5>
+                                <form action="{% url 'save_blog_post' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="row mt-5">
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <input type="text" name="Name" placeholder="Name">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <input type="text" name="Email" placeholder="Email">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <input type="text" name="fav_game" placeholder="Your Favorite Game...">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <textarea name="message" placeholder="Share your thoughts..."></textarea>
+                                            <button type="submit" class="site-btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Details Section End -->
+
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+          <!-- Footer Section End -->
+
+          <!-- Search model Begin -->
+          <div class="search-model">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+                <div class="search-close-switch"><i class="icon_close"></i></div>
+                <form class="search-model-form">
+                    <input type="text" id="search-input" placeholder="Search here.....">
+                </form>
+            </div>
+        </div>
+        <!-- Search model end -->
+
+        <!-- Js Plugins -->
+        <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'web/js/player.js' %}"></script>
+        <script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'web/js/mixitup.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+        <script>
+            function show() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+            }
+        </script>
+        <script>
+            document.addEventListener('click', function (event) {
+                const target = event.target;
+                if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+                    const href = target.getAttribute('data-href');
+                    if (href) {
+                        window.location.href = href;
+                    }
+                }
+            });
+        </script>
+
+    </body>
+
+</html>

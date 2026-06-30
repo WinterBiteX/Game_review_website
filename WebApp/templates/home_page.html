@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+
+    <!-- Header Section Begin -->
+    <style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+    <style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        .gaming-heading1 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 30px 0;
+            font-size: 21px;
+            font-weight: bold;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gaming-heading1 a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .gaming-heading1 a:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 5px rgba(26, 188, 156, 0.6);
+        }
+    </style>
+    <style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+<!--                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>-->
+<!--                                    <ul class="dropdown">-->
+<!--                                        <li><a href="./categories.html">Categories</a></li>-->
+<!--                                        <li><a href="./anime-details.html">Anime Details</a></li>-->
+<!--                                        <li><a href="./anime-watching.html">Anime Watching</a></li>-->
+<!--                                        <li><a href="./blog-details.html">Blog Details</a></li>-->
+<!--                                        <li><a href="./signup.html">Sign Up</a></li>-->
+<!--                                        <li><a href="./login.html">Login</a></li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+                                <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span class="favorites-badge">{{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="{% static 'web/img/hero/1346611.jpeg' %}">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label genre">Action,Adventure</div>
+                                <h2 class="animated-heading">God Of War Ragnarok</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="{% static 'web/img/hero/cyber2.jpeg' %}">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label genre">RPG,Action,Adventure</div>
+                                <h2 class="animated-heading">Cyberpunk 2077</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="{% static 'web/img/hero/rdr2.jpg' %}">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label genre">Action,Adventure</div>
+                                <h2 class="animated-heading">Red Dead Redemption 2</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="{% static 'web/img/hero/wp9384417.webp' %}">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label genre">Action,Adventure</div>
+                                <h2 class="animated-heading">
+                                    Grand Theft Auto V
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="{% static 'web/img/hero/batman-arkham-knight-pc-spil-steam-cover.jpg' %}">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label genre">Action,Adventure,Stealth</div>
+                                <h2 class="animated-heading">
+                                    Batman: Arkham Knight
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="trending__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Unleash Your Style</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {% for i in cat %}
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item ">
+                                    <div class="product__item__pic set-bg rgb-shadow" data-setbg="{{i.Category_Image.url}}">
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5 class="gaming-heading1"><a href="{% url 'game_filter' i.Category_Name %}">{{i.Category_Name}}</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="product__sidebar">
+                        <div class="product__sidebar__view">
+                            <div class="section-title">
+                                <h5>Upcoming Games</h5>
+                            </div>
+                            {% for i in up_come %}
+                            <div>
+                                    <div class="product__sidebar__view__item set-bg"
+                                    data-setbg="{{i.Up_Cover_Image.url}}">
+                                    <div class="ep">{{i.Up_Age_Rating}}</div>
+                                    <div class="view" style="background-color:red"><i class="fa fa-star"></i>{{i.Up_Overall_Rating}}/10</div>
+                                    <h5><a href="{% url 'upcoming_details' i.id %}">{{i.Up_Game_Name}}</a></h5>
+                            </div>
+                            {% endfor %}
+<!--                            <div class="product__sidebar__view__item set-bg mix month week"-->
+<!--                            data-setbg="img/sidebar/tv-2.jpg">-->
+<!--                            <div class="ep">18 / ?</div>-->
+<!--                            <div class="view"><i class="fa fa-eye"></i> 9141</div>-->
+<!--                            <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>-->
+<!--                        </div>-->
+<!--                        <div class="product__sidebar__view__item set-bg mix week years"-->
+<!--                        data-setbg="img/sidebar/tv-3.jpg">-->
+<!--                        <div class="ep">18 / ?</div>-->
+<!--                        <div class="view"><i class="fa fa-eye"></i> 9141</div>-->
+<!--                        <h5><a href="#">Sword art online alicization war of underworld</a></h5>-->
+<!--                    </div>-->
+<!--                    <div class="product__sidebar__view__item set-bg mix years month"-->
+<!--                    data-setbg="img/sidebar/tv-4.jpg">-->
+<!--                    <div class="ep">18 / ?</div>-->
+<!--                    <div class="view"><i class="fa fa-eye"></i> 9141</div>-->
+<!--                    <h5><a href="#">Fate/stay night: Heaven's Feel I. presage flower</a></h5>-->
+<!--                </div>-->
+<!--                <div class="product__sidebar__view__item set-bg mix day"-->
+<!--                data-setbg="img/sidebar/tv-5.jpg">-->
+<!--                <div class="ep">18 / ?</div>-->
+<!--                <div class="view"><i class="fa fa-eye"></i> 9141</div>-->
+<!--                <h5><a href="#">Fate stay night unlimited blade works</a></h5>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/js/player.js' %}"></script>
+<script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'web/js/mixitup.min.js' %}"></script>
+<script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'web/js/main.js' %}"></script>
+<script>
+    function show() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+    }
+</script>
+<script>
+    document.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+            const href = target.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        }
+    });
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+</body>
+
+</html>

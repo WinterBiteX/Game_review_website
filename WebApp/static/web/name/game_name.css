@@ -1,0 +1,16 @@
+.game-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff6f61;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.game-name:hover {
+    background-color: green;
+    transform: translateY(-5px);
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+errors = {}
+
+        if name == "" or name == None:
+            errors["Name"] = "Username required."
+        elif len(name) < 3:
+            errors["Name"] = "Username must contain more than 3 characters."
+        elif Login_Db.objects.filter(Name = name).exists():
+            errors["Name"]  = "Username already taken."
+
+        if email == "" or email == None:
+            errors["Email"] = "Email Address required."
+        try:
+            validate_email(email)
+        except ValidationError:
+            errors["Email"] = "Please enter a valid email address."
+        if Login_Db.objects.filter(Email = email).exists():
+            errors["Email"] = "Email Address is already taken."
+
+        if mobile == "" or mobile == None:
+            errors["Mobile"] = "Mobile Number required."
+        elif not mobile.isdigit() or  len(mobile) != 10:
+            errors["Mobile"] = "Please enter a valid mobile number."
+        elif Login_Db.objects.filter(Mobile = mobile).exists():
+            errors["Mobile"] = "Mobile Number is already in use."
+
+
+        if len(password) < 5:
+            errors["Password"] = "Password must be at least 5 characters long."
+        elif re_password != password:
+            errors["Confirm_Password"] = "Passwords do not match."
+
+        if errors:
+            return render(request,"login_page.html",{"errors":errors})
+<script>
+            function toggleFavorite(event) {
+                event.preventDefault();  // Prevent form submission
+
+                const favoriteBtn = document.getElementById('favorite-btn');
+                const form = document.getElementById('favorite-form');
+                const formData = new FormData(form);  // Get form data
+                let spanData = document.getElementById('fav_count')
+
+
+                fetch("{% url 'toggle_favorite' data.id %}", {
+                    method: "POST",
+                    headers: {
+                        'X-CSRFToken': '{{ csrf_token }}',  // Send CSRF token
+                    },
+                    body: formData  // Send form data directly
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'added') {
+                        favoriteBtn.classList.add('favorited');
+                        favoriteBtn.innerHTML = '<span class="favorite-icon">&#10003;</span> Added to Favorites';
+                        console.log(data.count)
+                        if (data.count >0){
+                            spanData.innerHTML = data.count
+                            spanData.classList.add('favorites-badge')
+                        }else{
+                            spanData.innerHTML = ""
+                            spanData.classList.remove('favorites-badge')
+                        }
+
+                    } else if (data.status === 'removed') {
+                        favoriteBtn.classList.remove('favorited');
+                        favoriteBtn.innerHTML = '<span class="favorite-icon">&#9733;</span> Add to Favorites';
+                        console.log(data.count)
+                        if (data.count >0){
+                            spanData.innerHTML = data.count
+                            spanData.classList.add('favorites-badge')
+                        }else{
+                            spanData.innerHTML = ""
+                            spanData.classList.remove('favorites-badge')
+                        }
+
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        </script>
+<p>Welcome to GameHub’s Ultimate Top 5, where we spotlight this month’s fan-favorite games selected by YOU, the gamers! Every month, we scour through your votes, feedback, and epic gaming moments to bring you the absolute best. These are the games that have dominated the gaming community, earned the love of players everywhere, and continue to shape our world of gaming.
+
+Got a favorite game that didn’t make it? Don’t worry! You can help shape the list next month. But for now, let’s dive into the top 5 picks chosen by your fellow gamers this month!</p>
+</body>
+</html>

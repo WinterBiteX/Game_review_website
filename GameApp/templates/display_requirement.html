@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card">
+                <h5 class="card-header">System Requirement</h5>
+                <div class="card-body">
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Game Name</th>
+                          <th>Minimum_Operating System</th>
+                          <th>Maximum_Operating System</th>
+                          <th>Minimum_RAM</th>
+                          <th>Maximum_RAM</th>
+                          <th>Minimum_Processor</th>
+                          <th>Maximum_Processor</th>
+                          <th>Minimum_Graphics</th>
+                          <th>Maximum_Graphics</th>
+                          <th>Minimum_Storage</th>
+                          <th>Maximum_Storage</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in data %}
+                        <tr>
+                          <td>
+                            {{i.Requirement_Game}}
+                          </td>
+                          <td>{{i.Minimum_OperatingSystem}}</td>
+                          <td>{{i.Maximum_OperatingSystem}}</td>
+                          <td>{{i.Minimum_RAM}}</td>
+                          <td>{{i.Maximum_RAM}}</td>
+                          <td>{{i.Minimum_Processor}}</td>
+                          <td>{{i.Maximum_Processor}}</td>
+                          <td>{{i.Minimum_Graphics}}</td>
+                          <td>{{i.Maximum_Graphics}}</td>
+                          <td>{{i.Minimum_Storage}}</td>
+                          <td>{{i.Maximum_Storage}}</td>
+                          <td>
+                            <a href="{% url 'edit_requirement' i.id %}">
+                              <button class="btn btn-primary">Edit</button>
+                            </a>
+                            <a href="{% url 'delete_requirement' i.id %}">
+                              <button class="btn btn-danger">Delete</button>
+                            </a>
+                          </td>
+                        </tr>
+                      {% endfor %}
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+{% if messages %}
+    {% for i in messages %}
+       {% if i.tags == 'success' %}
+           <script>
+               swal('{{i}}','','success')
+           </script>
+       {% elif i.tags == 'error' %}
+           <script>
+               swal('{{i}}','','error')
+           </script>
+       {% elif i.tags == 'warning' %}
+           <script>
+               swal('{{i}}','','warning')
+           </script>
+       {% else %}
+           <script>
+               swal('{{i}}','','info')
+           </script>
+       {% endif %}
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+{% endblock %}
+

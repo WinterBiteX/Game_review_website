@@ -1,0 +1,63 @@
+
+@keyframes colorAnimation {
+    0% { color: rgb(93, 63, 211); }       /* Purple */
+    25% { color: rgb(255, 105, 180); }    /* Pink */
+    50% { color: rgb(0, 191, 255); }      /* Sky Blue */
+    75% { color: rgb(60, 179, 113); }     /* Medium Sea Green */
+    100% { color: rgb(93, 63, 211); }     /* Back to Purple */
+}
+
+.animated-heading {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(93, 63, 211);
+    animation: colorAnimation 5s ease-in-out infinite;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+}
+.genre {
+    font-size: 1.2em; /* Adjust the size as needed */
+    color: rgb(196, 18, 18); /* Light gray for contrast */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    margin-top: 10px; /* Space above the genre */
+}
+/* styles.css */
+
+@keyframes rgbShadow {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5);
+    }
+    25% {
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.5);
+    }
+    75% {
+        box-shadow: 0 0 15px rgba(255, 255, 0, 0.7), 0 0 30px rgba(255, 255, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5);
+    }
+}
+
+.rgb-shadow {
+    animation: rgbShadow 3s ease-in-out infinite;
+}
+.gaming-heading {
+    font-size: 1.313em;
+    font-weight: 700;
+    color: #e3e3e3; /* Light metallic gray */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Deep shadow for a bold look */
+    margin: 10px 0; /* Space around the heading */
+    border-bottom: 2px solid #ff4500; /* Orange border for emphasis */
+    padding-bottom: 5px;
+}
+
+
+
+
+
+

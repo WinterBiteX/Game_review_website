@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/name/game_name.css' %}" type="text/css">
+</head>
+
+<body>
+    <style>
+        #search-results {
+            display: flex; /* Use flexbox to align items in a row */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+            gap: 20px; /* Add spacing between the items */
+        }
+
+        .product__item {
+            width: 250px; /* Adjust the width of each item */
+            flex-shrink: 0; /* Prevent items from shrinking */
+            display: flex;
+            flex-direction: column; /* Stack content inside the item vertically */
+            border: 1px solid #ddd; /* Optional, for borders between items */
+            padding: 10px; /* Optional, add some padding for aesthetics */
+        }
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+    </style>
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+                                <li><a href="./blog.html">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+<!--                <div class="col-lg-2">-->
+<!--                    <div class="header__right">-->
+<!--                        <a href="#" class="search-switch"><span class="icon_search"></span></a>-->
+<!--                        <a href="./login.html"><span class="icon_profile"></span></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div id="mobile-menu-wrap">
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <form class="search-model-form" style="text-align:center">
+                <input type="text" id="search-input" placeholder="Search here.....">
+                <div class="row mt-5">
+                    <div class="col-lg-12 col-md-8">
+                        <div class="anime__details__review">
+                            <div class="row ">
+                                    <div class="col-lg-12">
+                                        <div class="search-results-container" id="search-results">
+
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+        <!-- Js Plugins -->
+        <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'web/js/player.js' %}"></script>
+        <script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'web/js/mixitup.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+        <script>
+            document.addEventListener('click', function (event) {
+                const target = event.target;
+                if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+                    const href = target.getAttribute('data-href');
+                    if (href) {
+                        window.location.href = href;
+                    }
+                }
+            });
+        </script>
+        <script>
+            const searchInput = document.getElementById("search-input");
+            const resultsContainer = document.getElementById("search-results");
+            let debounceTimeout;
+
+            function fetchSearchResults(query) {
+                if (query.length > 0) {
+                    fetch(`/search/?q=${encodeURIComponent(query)}`)
+                        .then(response => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error('Network response was not ok');
+                            }
+                        })
+                        .then(data => {
+                            resultsContainer.innerHTML = ''; // Clear previous results
+
+                            if (data.results && data.results.length > 0) {
+                                data.results.forEach(game => {
+                                    // Ensure game properties exist before rendering
+                                    const gameHTML = `
+                                        <div class="product__item">
+                                            <div class="product__item__pic set-bg" style="background-image: url('${game.cover_image || 'default-image.jpg'}');">
+                                                <div class="comment" style="background-color:red">${game.overall_rating || 'N/A'}/10</div>
+                                                <div class="view" style="background-color:red">${game.age_rating || 'N/A'}</div>
+                                            </div>
+                                            <div class="product__item__text">
+                                                <h5 class="game-name"><a href="${game.url || '#'}">${game.game_name || 'Unknown Game'}</a></h5>
+                                            </div>
+                                        </div>
+                                    `;
+                                    // Append the game HTML to the results container
+                                    resultsContainer.insertAdjacentHTML('beforeend', gameHTML);
+                                });
+                            } else {
+                                resultsContainer.innerHTML = '<p style="color:red;margin-left:280px;font-size:40px;margin-top:50px;font-weight:900">😞 Sorry! No results found....</p>';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching search results:', error);
+                            resultsContainer.innerHTML = '<p>There was an error fetching the results.</p>';
+                        });
+                } else {
+                    resultsContainer.innerHTML = ''; // Clear results if query is too short
+                }
+            }
+
+            searchInput.addEventListener("keyup", function() {
+                clearTimeout(debounceTimeout); // Clear any previous timeout
+                const query = searchInput.value;
+
+                debounceTimeout = setTimeout(() => {
+                    fetchSearchResults(query);
+                }, 300); // Delay of 300ms after the user stops typing
+            });
+        </script>
+
+
+
+</body>
+
+</html>

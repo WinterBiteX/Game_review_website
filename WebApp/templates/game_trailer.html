@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Trailer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/plyr.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'web/heading/heading.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'web/user/user.css' %}" type="text/css">
+</head>
+<body>
+
+
+    <!-- Header Section Begin -->
+    <style>
+        .header__logo{
+            margin: 0; /* Remove extra spacing */
+            padding: 0;
+            padding-top:5px
+        }
+        .profile-picture {
+            width: 80px;   /* Set the width of the circle */
+            height: 80px;  /* Set the height of the circle (same as width to make it round) */
+            border-radius: 50%;   /* Makes the image circular */
+            overflow: hidden;     /* Ensures any overflowing content is hidden */
+            background-color: #f0f0f0;  /* Optional: A fallback background color */
+            display: flex;      /* Flexbox allows centering the image inside the container */
+            justify-content: center;  /* Centers the image horizontally */
+            align-items: center;      /* Centers the image vertically */
+            margin-bottom: 10px;   /* Adds some space below the profile picture */
+        }
+
+        .profile-picture img {
+            width: 100%;    /* Ensures the image takes up the full width of the container */
+            height: 100%;   /* Ensures the image takes up the full height of the container */
+            object-fit: cover;   /* Ensures the image covers the entire circle */
+        }
+    </style>
+    <style>
+        .profile-picture {
+            width: 110px;
+            height:110px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border:1px solid black;
+        }
+        .username {
+            font-size: 25px;
+            text-align: center;
+            font-weight:bold;
+        }
+    </style>
+    <style>
+        #no-comments-message {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #no-comments-message i {
+            font-size: 24px;
+            color: #007BFF;
+        }
+    </style>
+    <style>
+        .favorites-badge {
+            background-color: #e74c3c; /* Red to highlight favorites */
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <style>
+        .video-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 10;
+        }
+
+        .video-controls button {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            pointer-events: all;
+        }
+    </style>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home_page' %}">
+                            <img class="logo" src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home_page' %}">Home</a></li>
+                                <li><a href="{% url 'game_page' %}">Games</a></li>
+                                <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                                <li><a href="{% url 'contact' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="javascript:void(0)" href="">
+                            <span onclick="show()" class="icon_profile">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap">
+                <div class="sidebar" id="sidebar">
+                    <div class="profile">
+                        <div class="profile-picture">
+                            {% if image %}
+                                <!-- Show the profile image if available -->
+                                <img src="{{ image.url }}" alt="Profile Image">
+                            {% else %}
+                                <!-- Show the default profile image if no image is set -->
+                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                            {% endif %}
+                        </div>
+                        {% if request.session.Name %}
+                        <div class="username">{{request.session.Name}}</div>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="{% url 'favorite' %}">Favorites
+                        {% if fav_count %}
+                        <span class="favorites-badge"> {{fav_count}}</span>
+                        {% endif %}
+                    </div>
+                    <div class="menu-item" data-href="">Settings</div>
+                    <div class="menu-item" data-href="{% url 'user_logout' %}">Logout</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="{% url 'home_page' %}"><i class="fa fa-home"></i>Home</a>
+                        <a href="{% url 'game_page' %}">Categories</a>
+                        <a href="#">{{ved.Game_Category}}</a>
+                        <span>{{ved.Game_Name}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Anime Section Begin -->
+    <section class="anime-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="anime__video__player">
+                        <video id="player" playsinline controls class="w-100">
+                            <source src="{{ved.Trailer.url}}" type="video/mp4" />
+                            <!-- Captions are optional -->
+                            <track kind="captions" label="English captions" src="#" srclang="en" default />
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="anime__details__review">
+                        <div class="section-title">
+                            <h5>Reviews</h5>
+                        </div>
+                        <div id="comments">
+                            {% if comments %}
+                                {% for i in comments %}
+                                <div class="anime__review__item">
+                                    <div class="anime__review__item__pic">
+                                        {% if i.User_Image %}
+                                        <img src="{{i.User_Image}}" alt="">
+                                        {% else %}
+                                        <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="">
+                                        {% endif %}
+                                    </div>
+                                    <div class="anime__review__item__text">
+                                        <h6>{{i.User_Name}} - <span>{{i.Created_Time|timesince}}</span></h6>
+                                        <p>{{i.Comment}}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div id="no-comments-message">
+                                    <i class="fas fa-comment-dots"></i> Be the first to comment!
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="anime__details__form">
+                        <div class="section-title">
+                            <h5>Your Comment</h5>
+                        </div>
+                        <form id="comment-form" action="{% url 'save_comment' %}" method="post">
+                            {% csrf_token %}
+                            <input name="gname" type="hidden" placeholder="Game Name" value="{{ved.Game_Name}}">
+                            <input name="uname" type="hidden" placeholder = "User Name" value="{{request.session.Name}}">
+                            {% if image != "" %}
+                            <input name="u_image" type="hidden" placeholder = "image" value="{{image.url}}">
+                            {% else %}
+                            <input name="u_image" type="hidden" placeholder = "image" value="/media/user_image/default_profile_image_hY9sY0L.png">
+                            {% endif %}
+                            <textarea name="comment" placeholder="Your Comment"></textarea>
+                            <button type="submit"><i class="fa fa-location-arrow"></i> Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Anime Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="{% url 'home_page' %}"><img src="{% static 'web/img/Screenshot_2024-11-03_010217-removebg-preview1.png' %}" style="height:50px;width:180px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
+                        <li><a href="{% url 'game_page' %}">Games</a></li>
+                        <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </footer>
+      <!-- Footer Section End -->
+
+      <!-- Search model Begin -->
+      <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'web/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web/js/player.js' %}"></script>
+    <script src="{% static 'web/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'web/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'web/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'web/js/main.js' %}"></script>
+    <script>
+    function show() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');  // Toggle the 'active' class to show/hide the sidebar
+    }
+</script>
+    <script>
+    document.addEventListener('click', function (event) {
+        const target = event.target;
+        if (target.tagName === 'DIV' && target.hasAttribute('data-href')) {
+            const href = target.getAttribute('data-href');
+            if (href) {
+                window.location.href = href;
+            }
+        }
+    });
+</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentsContainer = document.getElementById('comments');
+
+            commentForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(commentForm);
+                const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+                const submitButton = commentForm.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+
+                try {
+                    console.log('Submitting comment...');
+                    const response = await fetch("{% url 'save_comment' %}", {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRFToken': csrfToken,
+                        },
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        console.error('Error Response:', errorData);
+                        alert(errorData.error || 'An error occurred while submitting your comment.');
+                        throw new Error('Network response was not ok');
+                    }
+
+                    const data = await response.json();
+                    console.log('Comment Data:', data);
+
+                    const noCommentsMessage = document.getElementById('no-comments-message');
+                    if (noCommentsMessage) {
+                        noCommentsMessage.remove();
+                    }
+
+
+                    const sanitize = str => str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                    commentsContainer.insertAdjacentHTML('beforeend', `
+                        <div class="anime__review__item">
+                            <div class="anime__review__item__pic">
+                                <img src="${sanitize(data.user_image) || '{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}'}" alt="">
+                            </div>
+                            <div class="anime__review__item__text">
+                                <h6>${sanitize(data.user_name)} - <span>${sanitize(data.created_at)}</span></h6>
+                                <p>${sanitize(data.comment)}</p>
+                            </div>
+                        </div>
+                    `);
+
+                    commentForm.reset();
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Error submitting comment. Please try again.');
+                } finally {
+                    submitButton.disabled = false;
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'update_category' data.id %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="col-md-12">
+                  <div class="card mb-4">
+                    <h5 class="card-header">Edit Game Categories here.....</h5>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Game Category Name</label>
+                        <input value="{{data.Category_Name}}" name="cname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Game Category Name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                        <textarea name="description" type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description">{{data.Category_Description}}</textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Upload Image :</label>
+                        <img src="{{data.Category_Image.url}}" style = "margin-left:30px" width="100px" height="100px">
+                        <input style="margin-top:10px" name="c_img" class="form-control" type="file" id="formFileMultiple" multiple="">
+                      </div>
+                      <div class="mb-3">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+</form>
+
+</body>
+</html>
+{% endblock %}
+
