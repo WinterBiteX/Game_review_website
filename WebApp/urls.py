@@ -24,5 +24,6 @@ urlpatterns = [
     path('remove_favorite/<int:favorite_id>/', views.remove_favorite, name='remove_favorite'),
     path('fav_save_comment/', views.fav_save_comment, name='fav_save_comment'),
     path("blog_post/",views.blog_post,name="blog_post"),
-    path("save_blog_post/",views.save_blog,name="save_blog_post")
+    path("save_blog_post/",views.save_blog,name="save_blog_post"),
+    path("update_profile_picture/", views.update_profile_picture, name="update_profile_picture"),
 ]

@@ -6,9 +6,15 @@ from WebApp.models import Contact_Db,Login_Db,Comment_Db,Blog_Share
 from django.contrib.auth.models import User
 from django.contrib.auth import login,authenticate,logout
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
-
+# @login_required(login_url='login_page')
+# def admin_page(req):
+#     return render(req,"index.html")
 def admin_page(req):
+    if not req.user.is_authenticated:
+        messages.warning(req, "Please login to access the admin dashboard!")
+        return redirect(login_page)
     return render(req,"index.html")
 def add_category(req):
     return render(req,"add_category.html")
@@ -343,9 +349,17 @@ def delete_upcoming(request,up_id):
     data.delete()
     messages.warning(request,"Game deleted...!")
     return redirect(display_upcoming)
+# def display_comments(request):
+#     data = Comment_Db.objects.all()
+#     return render(request,"display_comments.html",{"data":data})
 def display_comments(request):
     data = Comment_Db.objects.all()
-    return render(request,"display_comments.html",{"data":data})
+    for comment in data:
+        try:
+            comment.current_image = Login_Db.objects.get(Name=comment.User_Name).Profile_Image
+        except Login_Db.DoesNotExist:
+            comment.current_image = None
+    return render(request, "display_comments.html", {"data": data})
 def delete_comments(request,com_id):
     data = Comment_Db.objects.filter(id=com_id)
     data.delete()

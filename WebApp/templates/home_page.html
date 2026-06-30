@@ -9,7 +9,13 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'web/favicon/favicon.ico' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/favicon/favicon-16x16.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'web/favicon/apple-touch-icon.png' %}">
+
+    <title>GameHub - Home</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -144,16 +150,6 @@
                             <ul>
                                 <li class="active"><a href="{% url 'home_page' %}">Home</a></li>
                                 <li><a href="{% url 'game_page' %}">Games</a></li>
-<!--                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>-->
-<!--                                    <ul class="dropdown">-->
-<!--                                        <li><a href="./categories.html">Categories</a></li>-->
-<!--                                        <li><a href="./anime-details.html">Anime Details</a></li>-->
-<!--                                        <li><a href="./anime-watching.html">Anime Watching</a></li>-->
-<!--                                        <li><a href="./blog-details.html">Blog Details</a></li>-->
-<!--                                        <li><a href="./signup.html">Sign Up</a></li>-->
-<!--                                        <li><a href="./login.html">Login</a></li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
                                 <li><a href="{% url 'blog_post' %}">Our Blog</a></li>
                                 <li><a href="{% url 'contact' %}">Contacts</a></li>
                             </ul>
@@ -172,15 +168,26 @@
             <div id="mobile-menu-wrap">
                 <div class="sidebar" id="sidebar">
                     <div class="profile">
-                        <div class="profile-picture">
-                            {% if image %}
-                                <!-- Show the profile image if available -->
-                                <img src="{{ image.url }}" alt="Profile Image">
-                            {% else %}
-                                <!-- Show the default profile image if no image is set -->
-                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
-                            {% endif %}
-                        </div>
+<!--                        <div class="profile-picture">-->
+<!--                            {% if image %}-->
+<!--                                &lt;!&ndash; Show the profile image if available &ndash;&gt;-->
+<!--                                <img src="{{ image.url }}" alt="Profile Image">-->
+<!--                            {% else %}-->
+<!--                                &lt;!&ndash; Show the default profile image if no image is set &ndash;&gt;-->
+<!--                                <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">-->
+<!--                            {% endif %}-->
+<!--                        </div>-->
+                        <form method="POST" action="{% url 'update_profile_picture' %}" enctype="multipart/form-data" id="profile-pic-form">
+                            {% csrf_token %}
+                            <div class="profile-picture" onclick="document.getElementById('profile-pic-input').click();" style="cursor:pointer;">
+                                {% if image %}
+                                    <img src="{{ image.url }}" alt="Profile Image">
+                                {% else %}
+                                    <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
+                                {% endif %}
+                            </div>
+                            <input type="file" id="profile-pic-input" name="new_profile_picture" accept="image/*" style="display:none;" onchange="document.getElementById('profile-pic-form').submit();">
+                        </form>
                         {% if request.session.Name %}
                         <div class="username">{{request.session.Name}}</div>
                         {% endif %}

@@ -9,7 +9,11 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Upcoming Game Trailer</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'web/favicon/favicon.ico' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/favicon/favicon-16x16.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'web/favicon/apple-touch-icon.png' %}">
+    <title>Game Trailer - {{ved.Up_Game_Name}} </title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -212,9 +216,16 @@
                             {% if comments %}
                                 {% for i in comments %}
                                 <div class="anime__review__item">
+<!--                                    <div class="anime__review__item__pic">-->
+<!--                                        {% if i.User_Image %}-->
+<!--                                        <img src="{{i.User_Image}}" alt="">-->
+<!--                                        {% else %}-->
+<!--                                        <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="">-->
+<!--                                        {% endif %}-->
+<!--                                    </div>-->
                                     <div class="anime__review__item__pic">
-                                        {% if i.User_Image %}
-                                        <img src="{{i.User_Image}}" alt="">
+                                        {% if i.current_image %}
+                                        <img src="{{ i.current_image.url }}" alt="">
                                         {% else %}
                                         <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="">
                                         {% endif %}

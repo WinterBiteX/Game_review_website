@@ -26,13 +26,20 @@
                       <tbody>
                       {% for i in data %}
                         <tr>
-                          <td>
-                              {% if i.User_Image %}
-                                 <img src="{{i.User_Image}}" width="100px" height="100px">
-                              {% else %}
-                                <img src="{% static 'admin/assets/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" width="100px" height="100px">
-                              {% endif %}
-                          </td>
+<!--                          <td>-->
+<!--                              {% if i.User_Image %}-->
+<!--                                 <img src="{{i.User_Image}}" width="100px" height="100px">-->
+<!--                              {% else %}-->
+<!--                                <img src="{% static 'admin/assets/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" width="100px" height="100px">-->
+<!--                              {% endif %}-->
+<!--                          </td>-->
+                            <td>
+                                {% if i.current_image %}
+                                    <img src="{{ i.current_image.url }}" width="100px" height="100px">
+                                {% else %}
+                                    <img src="{% static 'admin/assets/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" width="100px" height="100px">
+                                {% endif %}
+                            </td>
                           <td>{{i.User_Name}}</td>
                           <td>{{i.Game_Name}}</td>
                           <td>{{i.Created_Time}}</td>
