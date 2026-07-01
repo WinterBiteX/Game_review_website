@@ -2,7 +2,8 @@ from django.db import models
 
 class Contact_Db(models.Model):
     Name = models.CharField(max_length=100,blank=True,null=True)
-    Mobile = models.IntegerField(blank=True,null=True)
+    # Mobile = models.IntegerField(blank=True,null=True)
+    Mobile = models.CharField(max_length=15, blank=True, null=True)
     Email = models.EmailField(blank=True,null=True)
     City = models.CharField(max_length=100,blank=True,null=True)
     Message = models.TextField(blank=True,null=True)
@@ -12,7 +13,8 @@ class Login_Db(models.Model):
     Profile_Image_URL = models.CharField(max_length=500, blank=True, null=True)
     Name = models.CharField(max_length=100,blank=True,null=True)
     Email = models.EmailField(blank=True,null=True)
-    Mobile = models.IntegerField(blank=True,null=True)
+    # Mobile = models.IntegerField(blank=True,null=True)
+    Mobile = models.CharField(max_length=15, blank=True, null=True)
     Password = models.CharField(max_length=100,blank=True,null=True)
     Re_Password = models.CharField(max_length=100,blank=True,null=True)
 class Comment_Db(models.Model):
