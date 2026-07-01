@@ -180,8 +180,17 @@
                         <form method="POST" action="{% url 'update_profile_picture' %}" enctype="multipart/form-data" id="profile-pic-form">
                             {% csrf_token %}
                             <div class="profile-picture" onclick="document.getElementById('profile-pic-input').click();" style="cursor:pointer;">
+<!--                                {% if image %}-->
+<!--                                    <img src="{{ image.url }}" alt="Profile Image">-->
+<!--                                {% else %}-->
+<!--                                    <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">-->
+<!--                                {% endif %}-->
                                 {% if image %}
-                                    <img src="{{ image.url }}" alt="Profile Image">
+                                    {% if image|slice:":4" == "http" %}
+                                        <img src="{{ image }}" alt="Profile Image">
+                                    {% else %}
+                                        <img src="{{ image.url }}" alt="Profile Image">
+                                    {% endif %}
                                 {% else %}
                                     <img src="{% static 'web/img/profile-circle-icon-2048x2048-cqe5466q.png' %}" alt="Default Profile Image">
                                 {% endif %}

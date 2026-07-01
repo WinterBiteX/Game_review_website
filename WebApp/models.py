@@ -9,6 +9,7 @@ class Contact_Db(models.Model):
 
 class Login_Db(models.Model):
     Profile_Image = models.ImageField(upload_to="user_image",blank=True,null=True)
+    Profile_Image_URL = models.CharField(max_length=500, blank=True, null=True)
     Name = models.CharField(max_length=100,blank=True,null=True)
     Email = models.EmailField(blank=True,null=True)
     Mobile = models.IntegerField(blank=True,null=True)
