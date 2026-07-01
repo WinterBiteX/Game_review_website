@@ -1,0 +1,3143 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-06-30T07:41:09.656Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Abhiram",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category_ db",
+    "content_type": 7,
+    "codename": "add_category_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category_ db",
+    "content_type": 7,
+    "codename": "change_category_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category_ db",
+    "content_type": 7,
+    "codename": "delete_category_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category_ db",
+    "content_type": 7,
+    "codename": "view_category_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add fan_ favorite_ db",
+    "content_type": 16,
+    "codename": "add_fan_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change fan_ favorite_ db",
+    "content_type": 16,
+    "codename": "change_fan_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete fan_ favorite_ db",
+    "content_type": 16,
+    "codename": "delete_fan_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view fan_ favorite_ db",
+    "content_type": 16,
+    "codename": "view_fan_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add game_ db",
+    "content_type": 8,
+    "codename": "add_game_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change game_ db",
+    "content_type": 8,
+    "codename": "change_game_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete game_ db",
+    "content_type": 8,
+    "codename": "delete_game_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view game_ db",
+    "content_type": 8,
+    "codename": "view_game_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add requirement_ db",
+    "content_type": 9,
+    "codename": "add_requirement_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change requirement_ db",
+    "content_type": 9,
+    "codename": "change_requirement_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete requirement_ db",
+    "content_type": 9,
+    "codename": "delete_requirement_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view requirement_ db",
+    "content_type": 9,
+    "codename": "view_requirement_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add upcoming_ db",
+    "content_type": 12,
+    "codename": "add_upcoming_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change upcoming_ db",
+    "content_type": 12,
+    "codename": "change_upcoming_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete upcoming_ db",
+    "content_type": 12,
+    "codename": "delete_upcoming_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view upcoming_ db",
+    "content_type": 12,
+    "codename": "view_upcoming_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add blog_ share",
+    "content_type": 15,
+    "codename": "add_blog_share"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change blog_ share",
+    "content_type": 15,
+    "codename": "change_blog_share"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete blog_ share",
+    "content_type": 15,
+    "codename": "delete_blog_share"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view blog_ share",
+    "content_type": 15,
+    "codename": "view_blog_share"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add comment_ db",
+    "content_type": 13,
+    "codename": "add_comment_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change comment_ db",
+    "content_type": 13,
+    "codename": "change_comment_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete comment_ db",
+    "content_type": 13,
+    "codename": "delete_comment_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view comment_ db",
+    "content_type": 13,
+    "codename": "view_comment_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add contact_ db",
+    "content_type": 10,
+    "codename": "add_contact_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change contact_ db",
+    "content_type": 10,
+    "codename": "change_contact_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete contact_ db",
+    "content_type": 10,
+    "codename": "delete_contact_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view contact_ db",
+    "content_type": 10,
+    "codename": "view_contact_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add favorite_ db",
+    "content_type": 14,
+    "codename": "add_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change favorite_ db",
+    "content_type": 14,
+    "codename": "change_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete favorite_ db",
+    "content_type": 14,
+    "codename": "delete_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view favorite_ db",
+    "content_type": 14,
+    "codename": "view_favorite_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add login_ db",
+    "content_type": 11,
+    "codename": "add_login_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change login_ db",
+    "content_type": 11,
+    "codename": "change_login_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete login_ db",
+    "content_type": 11,
+    "codename": "delete_login_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view login_ db",
+    "content_type": 11,
+    "codename": "view_login_db"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$ac4BCrKfxZtalmEBAdPDTR$A9vQYyr053CUS/DPn43VzMZDHGKD2FBGB/yuycm1KJs=",
+    "last_login": "2026-06-30T10:42:26.098Z",
+    "is_superuser": true,
+    "username": "admin123",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-30T07:40:08.566Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "GameApp",
+    "model": "category_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "GameApp",
+    "model": "game_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "GameApp",
+    "model": "requirement_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "WebApp",
+    "model": "contact_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "WebApp",
+    "model": "login_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "GameApp",
+    "model": "upcoming_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "WebApp",
+    "model": "comment_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "WebApp",
+    "model": "favorite_db"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "WebApp",
+    "model": "blog_share"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "GameApp",
+    "model": "fan_favorite_db"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "esetr9jopjiexqfz2kojzoffdoqhi984",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-4diU9DmDtd5d4wBypDipEHeHSCmgfTPzXiLBtta0dV7SROIitDj9bhnwwW0HdId2myXObV2mLHdFHrTLcSZ-Xg_376BCr98arPbs2QU9uOKBsShGLIasDsZgZMuooztDIBPQgaIh26JjjoQqBxLvD_uIOMA:1t8YYl:zgsxJrnkVcICtGv_4nZJNTU8LX1YuhJMz1fbRkSq2ao",
+    "expire_date": "2024-11-20T05:26:27.723Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "14qbb2a7vt60rchs2d0vssjekjw1wu3h",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-4diU9DmDtd5d4wBypDipEHeHSCmgfTPzXiLBtta0dV7SROIitDj9bhnwwW0HdId2myXObV2mLHdFHrTLcSZ-Xg_376BCr98arPbs2QU9uOKBsShGLIasDsZgZMuooztDIBPQgaIh26JjjoQqBxLvD_uIOMA:1tAsUe:AWc2UZPTRgOreLpbygeMqcspnOm-Ai8hJ03Y1WTtj0o",
+    "expire_date": "2024-11-26T15:07:48.664Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "snxycahh2c7b45sf6ck98ktgvgj4incp",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-4diU9DmDtd5d4wBypDipEHeHSCmgfTPzXiLBtta0dV7SROIitDj9bhnwwW0HdId2myXObV2mLHdFHrTLcSZ-Xg_376BCr98arPbs2QU9uOKBsShGLIasDsZgZMuooztDIBPQgaIh26JjjoQqBxLvD_uIOMA:1tAsos:1tb6gEJWpssFhWeJklWCZnzOej1p6uQDLNmdtkNhXfw",
+    "expire_date": "2024-11-26T15:28:42.356Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "nzilgvq91dhqpw07gvz7bslubdl9hbx6",
+  "fields": {
+    "session_data": ".eJxVkM1qwzAQhF8l-Fz_yFYcOZBDeis0JW9gVqu1rTaSHDkmhdJ3r0TctLlI8M0ww-xXcoRpujqvVrtVsk1ADjp5So7edfpE7YuBngLODSkN-ZVkrk2fjzc5Re0xfBqdTcuCi8_4pHimNa_rczbaPmS9ul7b9g1MDNr72d7Zb3XsvfEW5svQzhP5VkfMHpkE_CAbBfUOtndZKL54LbNoyRZ1yg5O0el58T4EDDANsa1iNdXEBdvwrgbCriDErlQVE2WJDVWErOFrEKoUyKFQG1l1rJGNwkKKGBrj7LIp3MyDCXD8N-gOl-UHsHO87J_FRPL9A8gcfuU:1tCJ2o:8xBCNSRsgek5of9WEf0kcyRf1wvW5XkiFmV-GVDuWiY",
+    "expire_date": "2024-11-30T13:40:58.340Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ycqyfuzv03qfnh1jfvixew7dssn91xnz",
+  "fields": {
+    "session_data": ".eJxVjssOwiAURP-FtSHlYQvudO83NJfLReoDDLRxYfx3S9KFbs_MnMybjbDMcVwqlXHy7MAE2_0yB3ij1AJ_hXTJHHOay-R4q_AtrfycPd1PW_dPEKHGdQ1K9NSTNmLQoQfC0BFikF4JIyVaUoTC6j0YLw1q6PzgVBDWWY-dM03adAketNqOLk4FHit8Qq2vXNpB2ODnC3Q5Rvc:1tRnJ5:fMKg6k9JGLJVM4iOnjbWdjmcYuNZDxHBrqxVLU3D76g",
+    "expire_date": "2025-01-12T07:01:47.042Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1oqinofyh089h7hw7y4hhelwz6qrvrzg",
+  "fields": {
+    "session_data": ".eJxVjk0PgjAMQP_LzoawgbB507vGk1fSdZ1DBQwDjTH-dzclfhz7-vrSO6tgHFw1euqr2rAF42z2yzTgkdq4MAdo912CXTv0tU6ikkxbn6w7Q6fV5P4FHHgXriHjBRWUS17mtgBCmxKiFSbjUghUlBFylc9BGiExh9SUOrNcaWUw1TJGY66FhkJtqV3dQxPgGby_dn18ED5w87Z29QFuYdx-ncsLPZ6QflHN:1tc3uf:5ZqGOCSn6wQOFPvb-0rDwZ_DAYJhXAS75Vxr82OPfdQ",
+    "expire_date": "2025-02-09T14:47:01.317Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jv9lo6jczgzg1pbb2qvw3xz7f9vp6a5w",
+  "fields": {
+    "session_data": ".eJxVjk0PgjAMQP_LzoawgbB507vGk1fSdZ1DBQwDjTH-dzclfhz7-vrSO6tgHFw1euqr2rAF42z2yzTgkdq4MAdo912CXTv0tU6ikkxbn6w7Q6fV5P4FHHgXriHjBRWUS17mtgBCmxKiFSbjUghUlBFylc9BGiExh9SUOrNcaWUw1TJGY66FhkJtqV3dQxPgGby_dn18ED5w87Z29QFuYdx-ncsLPZ6QflHN:1tcMvn:Y7uIlDW_4lXp3hFBKEvYLPJ62ZXhIPAacaqdbuMjSKA",
+    "expire_date": "2025-02-10T11:05:27.136Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9zhkcc18w6iwkzge2u4l64xtvp3xzu8u",
+  "fields": {
+    "session_data": "eyJOYW1lIjoiVmlqYXkiLCJQYXNzd29yZCI6InZpamF5In0:1uh215:s1l54rdgLdJyWKbXQ1f2PeVZI-U_NvUhe4MVLJ8S3-c",
+    "expire_date": "2025-08-13T08:18:27.622Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "incdqpcngno3a8ji531cin52xuz3b65g",
+  "fields": {
+    "session_data": "eyJOYW1lIjoiVmlqYXkiLCJQYXNzd29yZCI6InZpamF5In0:1v25jC:yAhRfpHFQMREeNHCjss_QX1yqWas9_os28ulw5EVs9o",
+    "expire_date": "2025-10-10T10:31:02.884Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x5tiqjkbf4q7hfn3a7b4a64c43tyxut6",
+  "fields": {
+    "session_data": "eyJOYW1lIjoiVmlqYXkiLCJQYXNzd29yZCI6InZpamF5In0:1v25ju:aY7pbsCp_SDl7qnCQaW6d0o_olP58bPKH4yC0-3VB7c",
+    "expire_date": "2025-10-10T10:31:46.250Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fo69cdysmk6qscv8j59s1yktc9m69j7i",
+  "fields": {
+    "session_data": ".eJxVjM0OgjAQBt-lZ9P0h2Lr0bvGk1eysEWKUgwFjTG-u62SiMedb3aepIBpbIop2KFwSDZEkNWSlVCdrU8DtuBPPa16Pw6upEmh8xrorkd72c7uX6CB0MRvq7RRotSmRM6lVljJmhkUXKMWSum8rq1ljLMs50agyYABSmmFTpyvYzTlPHQ21gA757mQkV4hhHs_4IJmEe-_4tG18Ijn4WfdPuj1BrOYUEE:1weVk6:A7WRyRFylJqiba8BAKwuS5JUnVH2UIBSfEd9-QZ0cwU",
+    "expire_date": "2026-07-14T10:31:02.526Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "q3u5o5wlmrv3vaovhf42vp6a7xey3rql",
+  "fields": {
+    "session_data": ".eJxVjM0OwiAQBt-FsyH8lAre9K7xDZqFpVK1YEobD8Z3F6KHetz5ZudFOljm0C3ZT92AZEcE2ayZBXfzsQ54hXhJ1KU4T4OlVaG_NdNjQn8__Ny_QIAcyrdX2ihhtbHIudQKneyZQcE1aqGUbvvee8Y4a1puBJoGGKCUXujK-bZEay7C6EsNcBwiF7LQB-T8TBOuaFPw6SvuXVjKdV5Jlbw_DuBPPQ:1wenEA:lEEPywpRYfUm-7Mif_ngs-iVT0xiqFMCPlJYBbPzusQ",
+    "expire_date": "2026-07-15T05:11:14.566Z"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 2,
+  "fields": {
+    "Category_Name": "Action Games",
+    "Category_Description": "High-energy games with intense combat and physical challenges that require quick reflexes.",
+    "Category_Image": "Game Categories/action-games-1920-x-1080-wallpaper-em1gvdroqkkyzptx.jpg"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 3,
+  "fields": {
+    "Category_Name": "Adventure Games",
+    "Category_Description": "Story-focused games that involve exploration, puzzle-solving, and character interaction in immersive settings.",
+    "Category_Image": "sha.jpg"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 4,
+  "fields": {
+    "Category_Name": "Horror Games",
+    "Category_Description": "Games that create suspense and fear, often with survival elements in eerie environments.",
+    "Category_Image": "Game Categories/horror-games-3500-x-1989-wallpaper-ufqhjqgcbib6vdr1.jpg"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 5,
+  "fields": {
+    "Category_Name": "RPG Games",
+    "Category_Description": "Role-playing games where players develop characters, complete quests, and make choices that shape the story.",
+    "Category_Image": "Game Categories/rpg-games-1900-x-1658-wallpaper-drinczxsdooy3i27.jpg"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 6,
+  "fields": {
+    "Category_Name": "Sports Games",
+    "Category_Description": "Games that recreate real-life sports, offering competitive play in various athletic disciplines.",
+    "Category_Image": "Game Categories/soccer-football-stadium-with-spotlights-ai-generated-wallpaper-football_0BBHY5O.webp"
+  }
+},
+{
+  "model": "GameApp.category_db",
+  "pk": 7,
+  "fields": {
+    "Category_Name": "Fighting Games",
+    "Category_Description": "Games that feature one-on-one combat, with players using skillful combos and moves to defeat opponents.",
+    "Category_Image": "Game Categories/HD-wallpaper-mortal-kombat-11-game-ultra-games-mortal-kombat-fighting-ga_j8tw2zN.jpg"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 1,
+  "fields": {
+    "Game_Category": "Action Games",
+    "Cover_Image": "Games/god-of-war-ragnarok-god-of-war-kratos-video-games-artwork-hd-wallpaper-preview_Qzo4yL9.jpg",
+    "Game_Name": "God of War: Ragnarok",
+    "Tag_Line": "\"The Fates of the Gods Await\"",
+    "Short_Description": "Embark on an epic journey with Kratos and Atreus as they navigate the realms of Norse mythology, facing gods and monsters while unraveling the mystery of Ragnarok.",
+    "Summary": "In God of War: Ragnarok, players continue the story of Kratos and his son Atreus following the events of the previous game. As they confront powerful foes and explore breathtaking realms, they must also contend with the impending doom of Ragnarok, which threatens their world and the future of the Norse gods. Themes of fatherhood, sacrifice, and the consequences of past actions permeate the narrative, providing depth to the characters and their journeys",
+    "Genre": "Action,Adventure,Mythological",
+    "Game_Style": "Open World",
+    "Platform": "PlayStation 4, PlayStation 5,PC",
+    "Release_Date": "November 9, 2022",
+    "Game_Mode": "Single Player",
+    "Developer": "Santa Monica Studio",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "17+",
+    "Play_Time": "Approximately 20-30 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/2322010/God_of_War_Ragnark/",
+    "Image1": "Games/4God-of-War-Ragnarok-PS5-Screenshot.jpg",
+    "Image2": "Games/s2.jpg",
+    "Image3": "Games/s3.png",
+    "Trailer": "Trailers/God_Of_War__Ragnarok_4K_Official_Trailer_1.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 2,
+  "fields": {
+    "Game_Category": "Adventure Games",
+    "Cover_Image": "HD-wallpaper-miles-morales-miles-morales-ps5-spider-man.jpg",
+    "Game_Name": "Marvel's Spider-Man: Miles Morales",
+    "Tag_Line": "\"The Next Generation of Spider-Man\"",
+    "Short_Description": "Join Miles Morales as he discovers his new powers and navigates the challenges of being Spider-Man while facing a war between Roxon and a war-like group called the Underground.",
+    "Summary": "In Marvel's Spider-Man: Miles Morales, players take on the role of Miles as he learns to harness his unique abilities, including bioelectric venom blasts and invisibility. The game explores themes of identity, responsibility, and family while offering an open-world experience set in a stunningly rendered New York City during winter. Players can engage in thrilling combat, complete various missions, and uncover secrets throughout the city.",
+    "Genre": "Action,Adventure,Superhero",
+    "Game_Style": "Open World",
+    "Platform": "PlayStation 4, PlayStation 5, PC",
+    "Release_Date": "November 12, 2020",
+    "Game_Mode": "Single Player",
+    "Developer": "Insomniac Games",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "13+",
+    "Play_Time": "Approximately 8-12 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/",
+    "Image1": "spider-man-miles-morales-2560x1440-11452.jpg",
+    "Image2": "Games/CjY47LXQ9XrtJolJNVGwc29D.jpg",
+    "Image3": "Games/HD-wallpaper-video-game-marvel-s-spider-man-miles-morales-spider-man-spider-man-ps4.jpg",
+    "Trailer": "Marvel s Spider Man_ Miles Morales - Official World Premiere Announcement Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 3,
+  "fields": {
+    "Game_Category": "RPG Games",
+    "Cover_Image": "Cover-art-6.webp",
+    "Game_Name": "Cyberpunk 2077",
+    "Tag_Line": "\"The World is Yours\"",
+    "Short_Description": "Immerse yourself in the sprawling Night City, a futuristic metropolis filled with danger, intrigue, and opportunities, as you navigate the life of V, a mercenary with a customizable background.",
+    "Summary": "In Cyberpunk 2077, players assume the role of V, a mercenary with customizable abilities and playstyles. Set in the open world of Night City, the game offers a rich narrative filled with choices that affect the story's outcome. Players can engage in combat, hacking, and dialogue interactions, while exploring a vibrant city filled with various factions, missions, and side quests. The game also features a deep character customization system, allowing players to tailor their experience. Themes of identity, technology, and societal issues are woven throughout the narrative, creating a compelling experience.",
+    "Genre": "Action,RPG,Shooting",
+    "Game_Style": "Open World",
+    "Platform": "PC,PlayStation 4,PlayStation 5",
+    "Release_Date": "December 10, 2020",
+    "Game_Mode": "Single Player",
+    "Developer": "CD Projekt Red",
+    "Publisher": "CD Projekt",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 20-50 hours",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+    "Image1": "Games/cy1.jpg",
+    "Image2": "Games/cy2.jpg",
+    "Image3": "Games/cy3.jpg",
+    "Trailer": "Trailers/Cyberpunk_2077_-_Official_World_Premiere_Trailer___E3_2018.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 4,
+  "fields": {
+    "Game_Category": "Horror Games",
+    "Cover_Image": "Games/dyl.jpg",
+    "Game_Name": "Dying Light 2: Stay Human",
+    "Tag_Line": "\"The Fate of The City is in Your Hands\"",
+    "Short_Description": "Survive in a vast, decaying open world where your choices shape the city and its people. Use parkour, combat, and strategic decisions to fight against both zombies and human factions.",
+    "Summary": "Set in a post-apocalyptic city overrun by zombies, Dying Light 2 allows players to control Aiden Caldwell, a wanderer with mysterious powers and a deep connection to the virus. Players explore the open world, completing missions, fighting enemies, and making choices that shape the environment and storyline. The game is known for its first-person parkour mechanics, allowing Aiden to move fluidly across rooftops and avoid dangers. Featuring a day-night cycle, intense combat, and various factions, the game challenges players to balance survival with complex choices that have lasting effects on the city.",
+    "Genre": "Action,Survival Horror,RPG",
+    "Game_Style": "Open World",
+    "Platform": "PC, PlayStation 4, PlayStation 5,",
+    "Release_Date": "February 4, 2022",
+    "Game_Mode": "Single Player / Multiplayer (Co-op)",
+    "Developer": "Techland",
+    "Publisher": "Techland",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 20-30 hours ",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/534380/Dying_Light_2_Stay_Human_Reloaded_Edition/",
+    "Image1": "Games/81_ZW69mMnS._SL1500_ed70a730-a94d-4172-8da3-7ed1c5096d5f.jpg",
+    "Image2": "Games/dyinglight2_2916893.jpg",
+    "Image3": "Games/dying-light-2-zombie-uhdpaper.com-4K-16.jpg",
+    "Trailer": "Trailers/Dying_Light_2_Official_4K_Gameplay_Trailer_-_E3_2019.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 5,
+  "fields": {
+    "Game_Category": "Fighting Games",
+    "Cover_Image": "Games/wp3128000.jpg",
+    "Game_Name": "Dragon Ball FighterZ",
+    "Tag_Line": "\"The Fight of Your Life Begins!\"",
+    "Short_Description": "Experience the high-octane action of Dragon Ball in a beautifully animated 2D fighting game that’s easy to pick up but difficult to master. Engage in 3v3 team battles, reliving iconic moments or creating your own.",
+    "Summary": "Dragon Ball FighterZ pits players against each other in explosive 3v3 battles, blending simple controls with complex combo mechanics. The game’s combat system allows for flashy attacks, devastating combos, and unique character abilities that capture the essence of Dragon Ball. Players can choose from a wide range of characters, each with their own moves and styles, including classic heroes and villains. The game also features a story mode, which introduces an original storyline with a mysterious new character, Android 21, developed with input from Akira Toriyama, the creator of Dragon Ball.\r\n",
+    "Genre": "Action,2D Fighting",
+    "Game_Style": "3v3 Tag Team Fighting",
+    "Platform": "PC, PlayStation 4, Xbox One",
+    "Release_Date": "January 26, 2018",
+    "Game_Mode": "Single Player / Multiplayer",
+    "Developer": "Arc System Works",
+    "Publisher": "Bandai Namco Entertainment",
+    "Age_Rating": "13+",
+    "Play_Time": "10 hours for story mode",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/678950/DRAGON_BALL_FighterZ/",
+    "Image1": "Games/Games-DragonBall-FighterZ-top.webp",
+    "Image2": "Games/p6va305x39p61.jpg",
+    "Image3": "Games/rqc41v21bam61.jpg",
+    "Trailer": "Trailers/Dragon_Ball_FighterZ_-_Launch_Trailer___PS4.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 6,
+  "fields": {
+    "Game_Category": "Sports Games",
+    "Cover_Image": "b1faa25f8499f1edb5353e3109b91ad3.jpg",
+    "Game_Name": "FIFA 24 ",
+    "Tag_Line": "\"Play Beautiful World of Football\"",
+    "Short_Description": "Experience the thrill of global soccer with FIFA 24’s enhanced graphics, refined gameplay, and updated rosters, bringing your favorite teams and players to life on the pitch.",
+    "Summary": " FIFA 24 is a soccer simulation that offers a mix of realism and arcade-style fun. Featuring improved animations, realistic player behaviors, and new tactical options, it appeals to both hardcore and casual soccer fans.",
+    "Genre": "Sports Simulation,Soccer",
+    "Game_Style": "Realistic Soccer Gameplay",
+    "Platform": "PC, PlayStation, Xbox",
+    "Release_Date": "September 7, 2023",
+    "Game_Mode": "Single Player/Multiplayer",
+    "Developer": "EA Sports",
+    "Publisher": "Electronic Arts (EA)",
+    "Age_Rating": "13+",
+    "Play_Time": "Unlimited",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/",
+    "Image1": "Games/EA-FC-Is-Just-FIFA-Culture.webp",
+    "Image2": "Games/74hPA6bFtkjHjrbepw36z9.jpg",
+    "Image3": "Games/FIFA-22-1320x743-1.jpg",
+    "Trailer": "Trailers/EA_SPORTS_FC_24___Official_Announce_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 7,
+  "fields": {
+    "Game_Category": "Action Games",
+    "Cover_Image": "Games/mL2362_1024x1024.webp",
+    "Game_Name": "Red Dead Redemption 2",
+    "Tag_Line": "\"The end of the Wild West\"",
+    "Short_Description": "Set in 1899, Red Dead Redemption 2 follows Arthur Morgan, a member of the Van der Linde gang, as he navigates through a changing world filled with outlaws, bounty hunters, and the looming threat of law enforcement. The game combines action, exploration, and a deep narrative to bring the Wild West to life.",
+    "Summary": "Red Dead Redemption 2 offers an expansive open-world experience, where players control Arthur Morgan and engage in various activities such as gunfights, horseback riding, hunting, and completing missions. Combat is dynamic, featuring both ranged and melee options, with players also having the choice to use stealth tactics. The game places a heavy emphasis on player choice and moral decisions, where Arthur’s actions affect his honor and the narrative. In addition to main story missions, there are numerous side activities such as fishing, treasure hunting, and camp life, as well as random events that players can encounter while exploring. The world is filled with NPCs that offer various interactions, and the player’s relationship with the gang and its members plays a pivotal role in shaping the overall experience.",
+    "Genre": "Action,Adventure ,Western RPG",
+    "Game_Style": "Open World,Story-Driven",
+    "Platform": "PC, PlayStation, Xbox",
+    "Release_Date": "October 26, 2018",
+    "Game_Mode": "Single Player & Online Multiplayer",
+    "Developer": "Rockstar Games",
+    "Publisher": "Rockstar Games",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 20-50 hours",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+    "Image1": "Games/video-games-red-dead-redemption-2-landscape-nature-horse-hd-wallpaper-preview.jpg",
+    "Image2": "Games/DpUZvD5XUAAiseB.jpg",
+    "Image3": "Games/desktop-wallpaper-arthur-morgan-fire-red-dead-redemption-red-dead-redemption-2-red_sqOov9h.jpg",
+    "Trailer": "Trailers/Red_Dead_Redemption_2_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 8,
+  "fields": {
+    "Game_Category": "Adventure Games",
+    "Cover_Image": "Horizon-Forbidden-West-Complete-Edition-PC-1.webp",
+    "Game_Name": "Horizon Forbidden West",
+    "Tag_Line": "\"Explore the Forbidden West and Uncover Earth's Hidden Secrets\"",
+    "Short_Description": "Embark on a journey with Aloy as she ventures into the untamed lands of the Forbidden West, facing awe-inspiring machines and uncovering the mysteries of a collapsing world.",
+    "Summary": "Continue the journey of Aloy as she travels to the mysterious Forbidden West, encountering majestic landscapes, dangerous tribes, and powerful machines. Use strategic combat, innovative gadgets, and stealth to survive and protect humanity from impending disaster.",
+    "Genre": "Adventure,Mecha,RPG",
+    "Game_Style": " Open World Exploration",
+    "Platform": "PlayStation 4, PlayStation 5,PC",
+    "Release_Date": "February 18, 2022",
+    "Game_Mode": " Single Player",
+    "Developer": "Guerrilla Games",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "16+",
+    "Play_Time": "Approximately 30-50 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/2420110/Horizon_Forbidden_West_Complete_Edition/",
+    "Image1": "Games/horizon-forbidden-west-complete-edition-complete-edition-pc-game-steam-europe-wallpaper-5.jpg",
+    "Image2": "Games/1229024.png",
+    "Image3": "Games/Games-Horizon-Forbidden-West-2.webp",
+    "Trailer": "Trailers/Horizon_Forbidden_West_-_Cinematic_Trailer___PS5_PS4.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 9,
+  "fields": {
+    "Game_Category": "Horror Games",
+    "Cover_Image": "Games/143490-1080x1920-mobile-1080p-resident-evil-village-wallpaper-image.jpg",
+    "Game_Name": "Resident Evil Village",
+    "Tag_Line": "\"Face Your Fears in the Village of Shadows\"",
+    "Short_Description": "Experience a harrowing journey with Ethan Winters as he searches for his kidnapped daughter in a mysterious village, confronting powerful foes and uncovering the truth behind an ancient evil.",
+    "Summary": "The game combines survival horror with first-person action as players navigate through an atmospheric village inhabited by various supernatural creatures, including werewolves and vampires. Players must scavenge for resources, solve puzzles, and battle formidable enemies, including the iconic Lady Dimitrescu.",
+    "Genre": "Survival Horror, Action",
+    "Game_Style": "First-person shooter",
+    "Platform": "PC, PlayStation 4, PlayStation 5",
+    "Release_Date": "May 7, 2021",
+    "Game_Mode": "Single Player",
+    "Developer": "Capcom",
+    "Publisher": "Capcom",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 10-12 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/1196590/Resident_Evil_Village/",
+    "Image1": "Games/1.jpg",
+    "Image2": "Games/Resident-Evil-Village-274723.jpg",
+    "Image3": "Games/rntzpa219mw61.jpg",
+    "Trailer": "Trailers/Resident_Evil_Village_-_Launch_Trailer___PS5_PS4.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 10,
+  "fields": {
+    "Game_Category": "RPG Games",
+    "Cover_Image": "ring-1.jpg",
+    "Game_Name": "Elden Ring",
+    "Tag_Line": " \"Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring.\"",
+    "Short_Description": "An epic open-world action RPG where players embark on a journey to become the Elden Lord in the Lands Between.",
+    "Summary": "Elden Ring offers a rich and complex gameplay experience, blending exploration, combat, and character development in the vast open world of the Lands Between. Players navigate diverse landscapes, engage in challenging combat requiring strategic approaches, and customize their characters through a range of weapons, spells, and playstyles. The game features dungeons, powerful bosses, and cooperative multiplayer elements, all while unraveling a deep narrative centered on ambition, power, and the quest to become the new Elden Lord.",
+    "Genre": "Action,RPG,Open World",
+    "Game_Style": "Challenging Combat, Exploration",
+    "Platform": "PC, PlayStation 4, PlayStation 5",
+    "Release_Date": "February 25, 2022",
+    "Game_Mode": "Single Player, Online Co-op",
+    "Developer": "FromSoftware",
+    "Publisher": "Bandai Namco Entertainment",
+    "Age_Rating": "17+",
+    "Play_Time": "Approximately 50-100 hours",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    "Image1": "Games/eldenring_2022_02_18_23_12_27_104.jpg",
+    "Image2": "Games/FDW1UodVQAEtX5X.jpg",
+    "Image3": "Games/elden-ring-starscourge-radahn-fight-kg.jpg",
+    "Trailer": "Trailers/ELDEN_RING_Official_Launch_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 11,
+  "fields": {
+    "Game_Category": "Sports Games",
+    "Cover_Image": "Games/nba-2k24-3840x2160-16318.jpg",
+    "Game_Name": "NBA 2K24",
+    "Tag_Line": " \"Experience the Game at Its Peak.\"",
+    "Short_Description": "Step onto the court with NBA 2K24, featuring enhanced graphics, realistic gameplay, and new game modes that redefine basketball simulation.",
+    "Summary": "NBA 2K24 offers a comprehensive basketball experience with refined player animations, improved AI behavior, and cutting-edge motion technology. The game introduces a new Mamba Moments mode that celebrates iconic performances, alongside the beloved MyCareer mode, where players can build their legacy. Enhanced features in MyTeam and realistic gameplay physics provide a deeper and more engaging basketball experience. The game also boasts cross-play for certain platforms, offering greater connectivity among players.",
+    "Genre": "Sports Simulation",
+    "Game_Style": "Realistic Simulation",
+    "Platform": "PC, PlayStation 4, PlayStation 5",
+    "Release_Date": "September 8, 2023",
+    "Game_Mode": "Single Player, Multiplayer",
+    "Developer": "Visual Concepts",
+    "Publisher": "2K Sports",
+    "Age_Rating": "13+",
+    "Play_Time": "Unlimited",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/2338770/NBA_2K24/",
+    "Image1": "Games/images_1.jpg",
+    "Image2": "Games/l6138abe1qu61.png",
+    "Image3": "Games/nba-2k24-screenshot-01.webp",
+    "Trailer": "Trailers/NBA_2K24___Official_Season_1_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 12,
+  "fields": {
+    "Game_Category": "Fighting Games",
+    "Cover_Image": "Games/wp13157440.jpg",
+    "Game_Name": "Naruto x Boruto: Ultimate Ninja Storm Connections",
+    "Tag_Line": "\"Unite the Shinobi Worlds in Epic Battles!\"",
+    "Short_Description": "Step into the world of Naruto and Boruto as you battle across both universes in this action-packed fighting game, featuring improved graphics and an extensive character roster.",
+    "Summary": "The game combines fast-paced, fluid combat with a rich narrative from both Naruto and Boruto. Players can engage in iconic battles, use powerful jutsus, and experience dynamic team-based fighting mechanics. The story mode covers key moments from both series, while multiplayer modes offer a competitive edge with cross-universe combat.",
+    "Genre": "Fighting, Action",
+    "Game_Style": "3D Fighting, Team Battles",
+    "Platform": "PC,PlayStation, Xbox",
+    "Release_Date": "June 7,2023",
+    "Game_Mode": " Single Player, Multiplayer",
+    "Developer": "CyberConnect2",
+    "Publisher": "Bandai Namco Entertainment",
+    "Age_Rating": "13+",
+    "Play_Time": "Around 15-20 hours",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/1020790/NARUTO_X_BORUTO_Ultimate_Ninja_STORM_CONNECTIONS/",
+    "Image1": "Games/NSC-screenshot-3.jpg",
+    "Image2": "maxresdefault.jpg",
+    "Image3": "Games/naruto-x-boruto-ultimate-ninja-storm-connections-screenshots_t1r9.jpg",
+    "Trailer": "Trailers/Naruto_x_Boruto_Ultimate_Ninja_Storm_Connections_-_Announcement_Trailer___PS5___sYI5nsm.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 13,
+  "fields": {
+    "Game_Category": "Action Games",
+    "Cover_Image": "Games/3C0B66D6-CD61-44DF-B5A5-83AF2C5CB308.jpeg",
+    "Game_Name": "Ghost of Tsushima",
+    "Tag_Line": "\"Become the Ghost, save your home.\"",
+    "Short_Description": "Ghost of Tsushima is an epic action-adventure game set in feudal Japan, where players assume the role of Jin Sakai, a samurai who must embrace new ways of combat and stealth to liberate his homeland from the Mongol invasion.",
+    "Summary": "Set in 1274 during the Mongol invasion of Tsushima, Ghost of Tsushima follows Jin Sakai, one of the last surviving samurai on the island. As the invaders ravage his homeland, Jin must forgo his traditional samurai code to adopt unconventional tactics as \"the Ghost.\" The game features an expansive open world teeming with diverse biomes, side quests, and stunning visuals. With deep combat mechanics and the choice between honor-bound samurai methods or stealthy ghost tactics, the game blends action, adventure, and exploration seamlessly.",
+    "Genre": "Action,Adventure,Historical",
+    "Game_Style": "Open World,Stealth,Exploration",
+    "Platform": "PlayStation 4,PlayStation 5,PC",
+    "Release_Date": "July 17, 2020 (Original)",
+    "Game_Mode": "Single Player, Multiplayer ",
+    "Developer": "Sucker Punch Productions",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "17+",
+    "Play_Time": "40-60 hours for the main story",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/",
+    "Image1": "Games/4fa0dc101740539.5f25efc2c754f.jpg",
+    "Image2": "Games/2tg37g6y5xs51.webp",
+    "Image3": "Games/a9c1ee4b96433566c581aa9b5608f558.jpg",
+    "Trailer": "Trailers/Ghost_of_Tsushima_-_Official_Cinematic_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 14,
+  "fields": {
+    "Game_Category": "Horror Games",
+    "Cover_Image": "Games/days-gone-zombie-strike-poster-808vz2axmhw4zege.jpg",
+    "Game_Name": "Days Gone",
+    "Tag_Line": "\"This world comes for you.\"",
+    "Short_Description": "Days Gone is an open-world action-adventure survival game set in a post-apocalyptic Pacific Northwest. Players step into the boots of Deacon St. John, a former outlaw biker turned drifter, as he battles for survival against hordes of Freakers, hostile humans, and the wilderness itself.",
+    "Summary": "Set two years after a global pandemic turned much of the population into zombie-like creatures known as Freakers, Days Gone follows Deacon St. John, a drifter and bounty hunter, as he searches for hope and purpose. The game combines narrative-driven gameplay with open-world exploration, where players can use Deacon’s motorcycle to traverse the vast landscapes, take on missions, and craft gear to survive. With dynamic weather systems and realistic day-night cycles, the world feels alive and perilous, emphasizing resource management and tactical combat.",
+    "Genre": "Action Survival,Post-Apocalyptic",
+    "Game_Style": "Survival,Stealth,Narrative-driven",
+    "Platform": "PlayStation 4, PC",
+    "Release_Date": "May 18, 2021(PC)",
+    "Game_Mode": "Single Player",
+    "Developer": "Bend Studio",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "17+",
+    "Play_Time": "12-20 hours(Main Story)",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/1259420/Days_Gone/",
+    "Image1": "Games/DaysGone004.jpg",
+    "Image2": "Games/uojhy571qjy21.jpg",
+    "Image3": "Games/dg-wt-screens-c_7bhq.1080.webp",
+    "Trailer": "Trailers/Days_Gone_-_Story_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 15,
+  "fields": {
+    "Game_Category": "Action Games",
+    "Cover_Image": "gta-5-landscape-art-2a58lbxzfpa0xjg7.jpg",
+    "Game_Name": "Grand Theft Auto V",
+    "Tag_Line": "\"Welcome to Los Santos.\"",
+    "Short_Description": "Grand Theft Auto V is an open-world action-adventure game set in the sprawling city of Los Santos and the surrounding Blaine County. Players experience the intertwined stories of three distinct protagonists as they navigate a world of crime, heists, and personal ambitions.",
+    "Summary": "Grand Theft Auto V offers a vast open-world experience, allowing players to explore the bustling city of Los Santos and its diverse countryside. The game introduces three playable characters—Michael, Trevor, and Franklin—each with unique abilities and storylines. Players can seamlessly switch between these characters during missions or free roam, enhancing the dynamic gameplay. Activities range from high-stakes heists, street races, and combat to flying planes, scuba diving, and stock market trading. The world reacts dynamically to the player's actions, creating a living environment filled with opportunities and challenges. The game also features a robust multiplayer mode, GTA Online, offering cooperative heists, competitive matches, and extensive customization options.",
+    "Genre": "Action,Crime, Sandbox,",
+    "Game_Style": "Open World,Heists,Exploration",
+    "Platform": "PlayStation 4, PC",
+    "Release_Date": "April 14, 2015 (PC)",
+    "Game_Mode": "Single Player, Multiplayer(GTA Online)",
+    "Developer": "Rockstar North",
+    "Publisher": "Rockstar Games",
+    "Age_Rating": "18+",
+    "Play_Time": "20-30 hours (Story)",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+    "Image1": "Games/4ed96c407df8b829a5b9785b6335e603.jpg",
+    "Image2": "Games/official-screenshot-pc-franklin-takes-option-b.jpg",
+    "Image3": "Games/official-screenshot-pc-trevor-lightning-snipe.jpg",
+    "Trailer": "Trailers/Grand_Theft_Auto_V__The_Official_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 16,
+  "fields": {
+    "Game_Category": "Adventure Games",
+    "Cover_Image": "uncharted-4-gd453ze133ye81yy.jpg",
+    "Game_Name": "UNCHARTED 4: A Thief's End",
+    "Tag_Line": "\"Every Treasure Has Its Price.\"",
+    "Short_Description": "Uncharted 4: A Thief's End is a critically acclaimed action-adventure game that serves as the dramatic conclusion to Nathan Drake's journey. Players explore breathtaking locations, solve intricate puzzles, and engage in cinematic combat as they uncover a legendary pirate treasure.",
+    "Summary": "The game is a third-person action-adventure featuring cinematic storytelling and varied gameplay elements such as platforming, exploration, and puzzle-solving. Players control Nathan Drake as he traverses lush jungles, ancient ruins, and urban landscapes in pursuit of pirate captain Henry Avery's long-lost treasure. The gameplay also includes stealth mechanics, intense gunfights, and the use of a grappling hook for added mobility. With a focus on character-driven narratives, the game blends fast-paced action sequences with quieter, emotional moments. Multiplayer offers competitive modes and cooperative challenges, extending its replayability.",
+    "Genre": "Adventure,Action",
+    "Game_Style": "Cinematic,Platformer, Exploration",
+    "Platform": "PS4,PS5,PC",
+    "Release_Date": "October 19, 2022(PC)",
+    "Game_Mode": "Single Player, Multiplayer",
+    "Developer": "Naughty Dog",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "13+",
+    "Play_Time": "15-20 hours(Main Story)",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/1659420/UNCHARTED_Legacy_of_Thieves_Collection/",
+    "Image1": "Games/uncharted-uncharted-4-a-thief-s-end-nathan-drake-wallpaper-preview.jpg",
+    "Image2": "Games/Uncharted-4-1-min-1.jpg",
+    "Image3": "Games/wallpapersden.com_uncharted-4-a-thief-s-end-gaming_1920x1080.jpg",
+    "Trailer": "Trailers/Uncharted_4__A_Thief_s_End_Official_Gameplay_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 17,
+  "fields": {
+    "Game_Category": "RPG Games",
+    "Cover_Image": "Games/witcher-3-b1lmtaxitidwfjbb.jpg",
+    "Game_Name": "The Witcher 3: Wild Hunt",
+    "Tag_Line": " \"The world doesn’t need a hero. It needs a professional.\"",
+    "Short_Description": "The Witcher 3: Wild Hunt is an epic open-world RPG where players step into the shoes of Geralt of Rivia, a monster hunter searching for his missing adopted daughter. Navigate through a war-torn world, encounter mystical creatures, and make decisions that shape the story.",
+    "Summary": "In The Witcher 3: Wild Hunt, players control Geralt of Rivia as he explores a vast, intricately designed open world filled with dynamic environments and varied biomes. Combat involves a mix of swordplay, magic (known as Signs), and alchemy for crafting potions and bombs. The game emphasizes player choice with branching dialogues and decisions that can lead to different story outcomes. Side quests are immersive and contribute significantly to world-building, offering rich stories that rival the main plot. Players can also engage in activities such as horse racing, fistfighting, and the in-game card game, Gwent.",
+    "Genre": "Action,RPG,Fantasy,",
+    "Game_Style": "Story-Driven,Combat-focused",
+    "Platform": "PC, PS4, PS5,Xbox One",
+    "Release_Date": "May 19, 2015",
+    "Game_Mode": "Single Player",
+    "Developer": "CD Projekt Red",
+    "Publisher": "CD Projekt",
+    "Age_Rating": "18+",
+    "Play_Time": "Approx. 50+ hours",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/agecheck/app/292030/",
+    "Image1": "Games/9j21ksu1ae381.webp",
+    "Image2": "Games/the-witcher-3-geralt-of-rivia-11472.webp",
+    "Image3": "Games/witcher-4k-geralt-and-eridin-52jfq21c0f8kngpx.jpg",
+    "Trailer": "Trailers/The_Witcher_3__Wild_Hunt_Complete_Edition_-_Official_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 18,
+  "fields": {
+    "Game_Category": "Adventure Games",
+    "Cover_Image": "Games/Detroit_Become_Human_Cover_001.webp",
+    "Game_Name": "Detroit: Become Human",
+    "Tag_Line": "\"What Makes Us Human?\"",
+    "Short_Description": "Embark on an emotional journey where choices shape the destiny of androids struggling for freedom and identity in a near-future Detroit.",
+    "Summary": "Players navigate through the intertwined stories of three androids—Connor, Markus, and Kara—each with unique perspectives. The game focuses on player-driven decision-making, offering branching narratives influenced by each choice. Moral dilemmas and high-stakes consequences drive the experience, allowing multiple story outcomes based on the paths chosen.",
+    "Genre": "Interactive Drama,Adventure",
+    "Game_Style": " Cinematic,Choice-Based Narrative",
+    "Platform": "PC, PlayStation 4",
+    "Release_Date": "May 25, 2018",
+    "Game_Mode": "Single Player",
+    "Developer": "Quantic Dream",
+    "Publisher": "Quantic Dream",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 10-12 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/1222140/Detroit_Become_Human/",
+    "Image1": "Games/10ba59db2a8bef9157343d93e2c6bc12.jpeg",
+    "Image2": "Games/56171ce8e0087b50ed8347c6e7aa43d5.jpg",
+    "Image3": "Games/thumb-1920-921089.jpg",
+    "Trailer": "Trailers/Detroit__Become_Human__TV_Commercial___PS4.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 19,
+  "fields": {
+    "Game_Category": "Action Games",
+    "Cover_Image": "Games/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "Game_Name": "Batman: Arkham Knight",
+    "Tag_Line": "\"Be the Batman\"",
+    "Short_Description": "Play as the Dark Knight and protect Gotham City from a collection of iconic villains, including the Scarecrow and the mysterious Arkham Knight.",
+    "Summary": "In Batman: Arkham Knight, players navigate an expansive Gotham City, using Batman's combat skills, detective tools, and the Batmobile for both transportation and combat. The game incorporates intricate fighting sequences, stealth gameplay, and puzzle-solving mechanics. Players can glide across rooftops, use gadgets to outsmart enemies, and engage in strategic battles against formidable foes.",
+    "Genre": "Action,Combact,Stealth",
+    "Game_Style": "Open World",
+    "Platform": "PC,PlayStation 4,Xbox One",
+    "Release_Date": "June 23, 2015",
+    "Game_Mode": "Single Player",
+    "Developer": "Rocksteady Studios",
+    "Publisher": "Warner Bros.Interactive Entertainment",
+    "Age_Rating": "17+",
+    "Play_Time": "Approximately 15-20 hours",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/",
+    "Image1": "Games/batman_ark_knight_gamescom-4.webp",
+    "Image2": "Games/batman-arkham-knight-rocksteady-studios-batman-batmobile-wallpaper-preview.jpg",
+    "Image3": "Games/screenshot_1920_1080_jpg_1370x785_crop_q85.jpg",
+    "Trailer": "Trailers/Official_Batman__Arkham_Knight_TV_Spot.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 20,
+  "fields": {
+    "Game_Category": "Horror Games",
+    "Cover_Image": "alan-wake-2-4k-wallpaper--18768.jpg",
+    "Game_Name": "Alan Wake 2",
+    "Tag_Line": "\"The Darkness Returns\"",
+    "Short_Description": "Alan Wake 2 is a psychological horror game that follows the troubled writer Alan Wake, who finds himself in a nightmare world, facing terrifying supernatural forces. Players will experience the game from the perspectives of both Alan and FBI agent Saga Anderson as they uncover a dark conspiracy.",
+    "Summary": "In Alan Wake 2, players switch between two characters: Alan Wake and Saga Anderson. While Alan is trapped in the dark, mysterious world of the \"Dark Place,\" Saga investigates a series of murders in the real world, which leads her to uncover secrets of the eerie town of Bright Falls. The game features intense combat, exploration, and puzzle-solving elements, blending psychological horror with action-adventure gameplay.",
+    "Genre": "Psychological Horror,Action,Adventure",
+    "Game_Style": "Linear Hybrid,Open world",
+    "Platform": "PC,PS5,Xbox Series X/S",
+    "Release_Date": "October 27, 2023",
+    "Game_Mode": "Single Player",
+    "Developer": "Remedy Entertainment",
+    "Publisher": "Epic Games",
+    "Age_Rating": "17+",
+    "Play_Time": "Approximately 10-15 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.epicgames.com/en-US/p/alan-wake-2",
+    "Image1": "Games/Alan-Wake-II-Review-Featured-Games.webp",
+    "Image2": "Games/Alan-Wake-2-4K-Screenshots-3.jpeg",
+    "Image3": "Games/some-screenshots-i-took-of-my-alan-wake-2-play-through-no-v0-y89pywjhukyb1.jpg",
+    "Trailer": "Trailers/Alan_Wake_2__Announcement_Trailer___The_Game_Awards_2021_-_Remedy_Entertainment_bICfp8m.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 21,
+  "fields": {
+    "Game_Category": "Fighting Games",
+    "Cover_Image": "9ea1e57e-6be1-4272-938a-b8422ac51f9c.6c0e8354f2c1d8156df4558b6d80e098.webp",
+    "Game_Name": "Mortal Kombat 11",
+    "Tag_Line": "\"Finish Him in the Ultimate Showdown!\"",
+    "Short_Description": "Enter the brutal world of Mortal Kombat, where epic battles, shocking fatalities, and intense rivalries await. Master the art of kombat in this cinematic and action-packed fighting game.",
+    "Summary": "Mortal Kombat 11 is the latest installment in the legendary Mortal Kombat series. Players engage in one-on-one battles using a diverse roster of characters, each with unique abilities and moves. Featuring a cinematic story mode, the game explores the themes of time manipulation as characters confront their past and future selves. The customizable fighting styles, interactive stages, and the return of Fatalities ensure every match feels exhilarating.",
+    "Genre": "Fighting,Violence,gore",
+    "Game_Style": "Traditional 2D Fighting with 3D Graphics",
+    "Platform": "PC,PS5,PS4",
+    "Release_Date": "April 23, 2019",
+    "Game_Mode": "Single Player & Multiplayer",
+    "Developer": "NetherRealm Studios",
+    "Publisher": "Warner Bros. Interactive Entertainment",
+    "Age_Rating": "18+",
+    "Play_Time": "Approximately 6-8 hours(story)",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/976310/Mortal_Kombat_11/",
+    "Image1": "Games/gwSJGx8.jpg",
+    "Image2": "Games/mortal-kombat-11-2000-e32b55882a63403081a7cb30bc4341d1.jpg",
+    "Image3": "Games/ss_5aaa0c14bd5969c4865c53463ed71ef4601952fe.jpg",
+    "Trailer": "Trailers/Mortal_Kombat_11_-_Trailer_With_Original_Theme_Song.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 22,
+  "fields": {
+    "Game_Category": "Fighting Games",
+    "Cover_Image": "Games/i-turned-the-tekken-8-key-art-into-a-poster-wallpaper-v0-hr1f5ubhyz4a1.webp",
+    "Game_Name": "Tekken 8",
+    "Tag_Line": "\"Fists Will Decide the Future.\"",
+    "Short_Description": "Tekken 8 continues the epic saga of the Mishima bloodline, delivering a fast-paced, visually stunning fighting experience that redefines the genre.",
+    "Summary": "Tekken 8 is the next evolution in the beloved Tekken series. Built on Unreal Engine 5, the game offers hyper-realistic graphics and enhanced gameplay mechanics. Featuring a roster of returning characters and new fighters, the game focuses on aggressive combat with a new \"Heat System\" that rewards players for offensive tactics. Dive into the cinematic story mode, refine your skills in training mode, or face opponents online in a competitive multiplayer arena.",
+    "Genre": "Fighting,Action",
+    "Game_Style": "3D Fighting",
+    "Platform": "PC,PS5,Xbox Series X/S",
+    "Release_Date": "January 26, 2024",
+    "Game_Mode": "Single Player, Multiplayer",
+    "Developer": "Bandai Namco Studios",
+    "Publisher": "Bandai Namco Entertainment",
+    "Age_Rating": "16+",
+    "Play_Time": "Main Story: ~10 hours",
+    "Overall_Rating": 9,
+    "Download_Link": "https://store.steampowered.com/app/1778820/TEKKEN_8/",
+    "Image1": "Games/tekken8_03.jpg",
+    "Image2": "FckXbtGXoAMbgtz.jpg",
+    "Image3": "tekken8-screenshot.jpg",
+    "Trailer": "Trailers/videoplayback.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 23,
+  "fields": {
+    "Game_Category": "Fighting Games",
+    "Cover_Image": "Games/luke-street-fighter-6-1280x1280-9573.png",
+    "Game_Name": "Street Fighter 6",
+    "Tag_Line": "\"Your Moment. Your Fight.\"",
+    "Short_Description": "Street Fighter 6 brings the next generation of iconic one-on-one combat, featuring new gameplay mechanics, stunning visuals, and an expansive story mode.",
+    "Summary": "Street Fighter 6 is a modern reimagining of the legendary fighting franchise. The game introduces the Drive System, a new gameplay mechanic that gives players versatile tools for strategy and creativity. Featuring three main game modes—Fighting Ground, World Tour, and Battle Hub—it combines classic Street Fighter action with a robust single-player experience and a vibrant online multiplayer community. The game’s diverse roster of 18 fighters includes returning legends and exciting newcomers.",
+    "Genre": "Fighting",
+    "Game_Style": "2D Fighting with modern visual effects",
+    "Platform": "PC,PS5,PS4",
+    "Release_Date": "June 2, 2023",
+    "Game_Mode": "Single Player, Multiplayer",
+    "Developer": "Capcom",
+    "Publisher": "Capcom",
+    "Age_Rating": "12+",
+    "Play_Time": "Story Mode: 15-20 hours",
+    "Overall_Rating": 7,
+    "Download_Link": "https://store.steampowered.com/app/1364780/Street_Fighter_6/",
+    "Image1": "Games/FUSPi_GUUAIxHZp.jpg",
+    "Image2": "Games/0_iT2wJNLsWlaW2hQz.png",
+    "Image3": "Games/thumb-1920-1304025.jpeg",
+    "Trailer": "Trailers/Street_Fighter_6_-_Teaser_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 24,
+  "fields": {
+    "Game_Category": "Sports Games",
+    "Cover_Image": "Games/wp12391925.webp",
+    "Game_Name": "Madden NFL 24",
+    "Tag_Line": "\"Every Snap Matters.\"",
+    "Short_Description": "Immerse yourself in the most authentic NFL experience yet, with advanced AI, real-world physics, and upgraded Franchise Mode.",
+    "Summary": "Madden NFL 24 brings unmatched realism with its improved FieldSENSE mechanics, dynamic animations, and enhanced AI for smarter gameplay decisions. Players can engage in new Mini-Games, more immersive Franchise Mode, and realistic Ultimate Team building.",
+    "Genre": "Sports, Simulation",
+    "Game_Style": "Realistic Sports Simulation",
+    "Platform": "PC,PS5,Xbox Series X/S",
+    "Release_Date": "August 18, 2023",
+    "Game_Mode": "Single Player,Multiplayer,Online PvP",
+    "Developer": "EA Tiburon",
+    "Publisher": "EA Sports",
+    "Age_Rating": "13+",
+    "Play_Time": "Unlimited (based on player modes)",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/2140330/Madden_NFL_24/",
+    "Image1": "Games/Madden-NFL-24-285458.jpg",
+    "Image2": "Games/1325084.png",
+    "Image3": "Games/download.jpg",
+    "Trailer": "Trailers/Madden_24_Official_Launch_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 25,
+  "fields": {
+    "Game_Category": "Sports Games",
+    "Cover_Image": "Games/6b31b410dbd8-ufl-header.png",
+    "Game_Name": "UFL",
+    "Tag_Line": "\"Fair to Play, Free to Play.\"",
+    "Short_Description": " A revolutionary free-to-play football game focused on fairness, skill, and realism, offering exciting online gameplay.",
+    "Summary": "UFL introduces a player-centric approach with realistic physics, stunning visuals, and a focus on skill-based gameplay. Compete in ranked matches, customize your team, and experience authentic football dynamics, all without the pay-to-win model.",
+    "Genre": "Sports,Football Simulation",
+    "Game_Style": "Realistic Soccer Gameplay",
+    "Platform": "PC,PlayStation, Xbox",
+    "Release_Date": "December 5, 2024",
+    "Game_Mode": "Multiplayer,Online PvP",
+    "Developer": "Strikerz Inc.",
+    "Publisher": "Strikerz Inc.",
+    "Age_Rating": "13+",
+    "Play_Time": "Unlimited (based on player modes)",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/3023930/UFL/",
+    "Image1": "Games/307189f79308256109b7a676e5fe5d6b.webp",
+    "Image2": "Games/1286046.jpg",
+    "Image3": "Games/UFL_Gameplay10.webp",
+    "Trailer": "Trailers/UFL_Release_Date_Trailer___Get_Early_Access.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 26,
+  "fields": {
+    "Game_Category": "Sports Games",
+    "Cover_Image": "Games/224e7e9fa8c9e263e79cdbf822f55411.jpg",
+    "Game_Name": "Riders Republic",
+    "Tag_Line": "\"Join the Republic and Ride Wild!\"",
+    "Short_Description": "Experience a massive multiplayer playground where you can bike, snowboard, ski, and wingsuit through a stunning open world combining famous U.S. national parks.",
+    "Summary": "Riders Republic offers fast-paced competitive and cooperative experiences. Players can compete in mass races with over 50 participants, customize their character, and progress in career mode through various extreme sports disciplines. The game is designed for high replayability with diverse challenges, exploration opportunities, and live events.",
+    "Genre": "Sports,Adventure,Racing",
+    "Game_Style": "Open-World Multiplayer",
+    "Platform": "PC,PS4,PS5,Xbox One",
+    "Release_Date": "October 28, 2021",
+    "Game_Mode": "Multiplayer(Mass Races),Career Mode",
+    "Developer": "Ubisoft Annecy",
+    "Publisher": "Ubisoft",
+    "Age_Rating": "13+",
+    "Play_Time": "Unlimited (based on player modes)",
+    "Overall_Rating": 8,
+    "Download_Link": "https://store.steampowered.com/app/2290180/Riders_Republic/",
+    "Image1": "Games/UGC1.avif",
+    "Image2": "Games/HD-wallpaper-will-riders-republic-be-on-steam.jpg",
+    "Image3": "Games/wp3970754.jpg",
+    "Trailer": "Trailers/Riders_Republic_-_Official_Cinematic_Trailer___Ubisoft_Forward.mp4"
+  }
+},
+{
+  "model": "GameApp.game_db",
+  "pk": 27,
+  "fields": {
+    "Game_Category": "Horror Games",
+    "Cover_Image": "Games/the-last-of-us-naughty-dog-playstation-3-joel-wallpaper-preview.jpg",
+    "Game_Name": "The Last of Us (Part 1)",
+    "Tag_Line": "\"Survive Together in a Broken World.\"",
+    "Short_Description": "Step into a gripping, post-apocalyptic world where humanity struggles to survive against the infected and the desperate. The Last of Us tells the emotional journey of Joel and Ellie, two survivors bound by fate, as they navigate a world of danger, loss, and hope.",
+    "Summary": "The Last of Us offers a blend of stealth, exploration, and intense combat. Players scavenge resources, solve puzzles, and face brutal encounters with enemies. The story's emotional depth and realistic gameplay immerse players in a harrowing tale of survival and human connection.",
+    "Genre": "Action, Horror,Survival",
+    "Game_Style": "Story-Driven, Third-Person",
+    "Platform": "PS4,PS5,PC",
+    "Release_Date": "June 14, 2013",
+    "Game_Mode": "Single Player,Multiplayer (Factions)",
+    "Developer": "Naughty Dog",
+    "Publisher": "Sony Interactive Entertainment",
+    "Age_Rating": "18+",
+    "Play_Time": "~15-20 hours for the main story",
+    "Overall_Rating": 10,
+    "Download_Link": "https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/",
+    "Image1": "Games/the-last-of-us-game-wallpaper--19649.jpg",
+    "Image2": "Games/the-lust-of-us-part-1-content-03.jpg",
+    "Image3": "Games/1295032.jpg",
+    "Trailer": "Trailers/Last_of_Us_Remake_Official_Announcement_Trailer___Summer_Game_Fest_2022.mp4"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 1,
+  "fields": {
+    "Requirement_Game": "God of War: Ragnarok",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-2500K (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)",
+    "Maximum_Processor": "Intel Core i5-4670K (4 core 3.4 GHz) or AMD Ryzen 5 1600 (6 core 3.2 GHz)",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 960 (4 GB) or AMD Radeon R9 290X (4 GB)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 (6 GB) or AMD RX 570 (4 GB)",
+    "Minimum_Storage": "190 GB available space",
+    "Maximum_Storage": "190 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 2,
+  "fields": {
+    "Requirement_Game": "Marvel's Spider-Man: Miles Morales",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-4670 or AMD Ryzen 5 1600",
+    "Maximum_Processor": "Intel Core i5-4670 or AMD Ryzen 5 1600",
+    "Minimum_Graphics": "NVIDIA GTX 950 or AMD Radeon RX 470",
+    "Maximum_Graphics": "NVIDIA GTX 1060 or AMD Radeon RX 580",
+    "Minimum_Storage": "75 GB available space",
+    "Maximum_Storage": "75 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 4,
+  "fields": {
+    "Requirement_Game": "Cyberpunk 2077",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "12 GB RAM",
+    "Minimum_Processor": "Intel Core i5-3570K or AMD FX-8310",
+    "Maximum_Processor": "Intel Core i7-4790 or AMD Ryzen 3 3200G",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 970 / AMD Radeon RX 470",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 6GB / GTX 1660 Super or AMD Radeon RX 590",
+    "Minimum_Storage": "70 GB available space (SSD recommended",
+    "Maximum_Storage": "70 GB available space (SSD required)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 5,
+  "fields": {
+    "Requirement_Game": "Dying Light 2: Stay Human",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": " Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i3-9100 or AMD Ryzen 3 2300X",
+    "Maximum_Processor": "Intel Core i5-8600K or AMD Ryzen 5 3600X",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 560 (4GB VRAM)",
+    "Maximum_Graphics": " NVIDIA GeForce GTX 1060 6GB / GTX 1660 Super or AMD Radeon RX 5600 XT",
+    "Minimum_Storage": "60 GB available space",
+    "Maximum_Storage": "60 GB available space (SSD recommended)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 6,
+  "fields": {
+    "Requirement_Game": "Dragon Ball FighterZ",
+    "Minimum_OperatingSystem": "OS: Windows 7/8/10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 7/8/10 (64-bit)",
+    "Minimum_RAM": "4 GB RAM",
+    "Maximum_RAM": "8 GB RAM",
+    "Minimum_Processor": "Intel Core i5-3470 or AMD FX-4350",
+    "Maximum_Processor": "Intel Core i7-3770 or AMD FX-8350",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 650 Ti or Radeon HD 6870",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 660 or Radeon HD 7870",
+    "Minimum_Storage": "6 GB available space",
+    "Maximum_Storage": "6 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 7,
+  "fields": {
+    "Requirement_Game": "FIFA 24",
+    "Minimum_OperatingSystem": " Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "12 GB RAM",
+    "Minimum_Processor": "Intel Core i5-6600K or AMD Ryzen 5 1600",
+    "Maximum_Processor": "Intel Core i7-6700 or AMD Ryzen 7 2700X",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 570 (4 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1660 Ti or AMD Radeon RX 5600 XT",
+    "Minimum_Storage": "100 GB available space",
+    "Maximum_Storage": "100 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 8,
+  "fields": {
+    "Requirement_Game": "Red Dead Redemption 2",
+    "Minimum_OperatingSystem": "Windows 7/8/10 (64-bit)",
+    "Maximum_OperatingSystem": " Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "12 GB RAM",
+    "Minimum_Processor": "Intel Core i5-2500K or AMD FX-6300",
+    "Maximum_Processor": "Intel Core i7-4770K or AMD Ryzen 5 1500X",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 770 2GB or AMD Radeon R9 280 3GB",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 480 4GB",
+    "Minimum_Storage": "150 GB available space",
+    "Maximum_Storage": "150 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 9,
+  "fields": {
+    "Requirement_Game": "Horizon Forbidden West",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": " Intel Core i5-2500K or AMD Ryzen 3 1200",
+    "Maximum_Processor": "Intel Core i7-4770 or AMD Ryzen 5 1600",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8 GB)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1070 / RTX 2060 or AMD Radeon RX 5700 XT",
+    "Minimum_Storage": "100 GB available space ",
+    "Maximum_Storage": "100 GB available space (SSD recommended)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 10,
+  "fields": {
+    "Requirement_Game": "Resident Evil Village",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "AMD Ryzen 3 1200 or Intel Core i5-7500",
+    "Maximum_Processor": " AMD Ryzen 5 3600 or Intel Core i7-8700",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 560 (4 GB VRAM)",
+    "Maximum_Graphics": " NVIDIA GeForce GTX 1070 or AMD Radeon RX 5700",
+    "Minimum_Storage": "50 GB available space",
+    "Maximum_Storage": "50 GB available space (SSD recommended)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 11,
+  "fields": {
+    "Requirement_Game": "Elden Ring",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": " Windows 10/11 (64-bit)",
+    "Minimum_RAM": "12 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": " Intel Core i5-8400 or AMD Ryzen 3 3300X",
+    "Maximum_Processor": "Intel Core i7-8700K or AMD Ryzen 5 3600X",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1060 3 GB or AMD Radeon RX 580 4 GB",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1070 8 GB or AMD Radeon RX Vega 56 8 GB",
+    "Minimum_Storage": "60 GB available space",
+    "Maximum_Storage": "60 GB available space (SSD recommended for better performance)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 12,
+  "fields": {
+    "Requirement_Game": "NBA 2K24",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "4 GB RAM",
+    "Maximum_RAM": "8 GB RAM",
+    "Minimum_Processor": " Intel Core i3-2100 or AMD FX-4100",
+    "Maximum_Processor": "Intel Core i5-4430 or AMD FX-8370",
+    "Minimum_Graphics": "NVIDIA GeForce GT 450 or AMD Radeon HD 7770",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 770 or AMD Radeon R9 270",
+    "Minimum_Storage": "110 GB available space",
+    "Maximum_Storage": "110 GB available space (SSD recommended for smoother performance)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 13,
+  "fields": {
+    "Requirement_Game": "Naruto x Boruto: Ultimate Ninja Storm Connections",
+    "Minimum_OperatingSystem": "OS: Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i3-4170 or AMD FX-6300",
+    "Maximum_Processor": "Intel Core i5-8400 or AMD Ryzen 5 2600",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 660 or AMD Radeon HD 7870 (2 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 or AMD Radeon RX 590 (4 GB VRAM)",
+    "Minimum_Storage": "50 GB available space",
+    "Maximum_Storage": "50 GB available space (SSD recommended for smoother performance)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 14,
+  "fields": {
+    "Requirement_Game": "Ghost of Tsushima",
+    "Minimum_OperatingSystem": "Windows 10 64-bit",
+    "Maximum_OperatingSystem": "Windows 10 64-bit",
+    "Minimum_RAM": "8GB RAM",
+    "Maximum_RAM": "16GB RAM",
+    "Minimum_Processor": "Intel Core i3-7100 or AMD Ryzen 3 1200",
+    "Maximum_Processor": "Nvidia GeForce RTX 3070 or AMD Radeon RX 6800",
+    "Minimum_Graphics": "Nvidia GeForce GTX 960 (4GB) or AMD Radeon RX 5500 XT",
+    "Maximum_Graphics": " Nvidia GeForce RTX 3070 or AMD Radeon RX 6800",
+    "Minimum_Storage": "75GB HDD (SSD recommended for better performance)",
+    "Maximum_Storage": "75GB SSD"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 15,
+  "fields": {
+    "Requirement_Game": "Days Gone",
+    "Minimum_OperatingSystem": "10 (64-bit)",
+    "Maximum_OperatingSystem": "10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-2500K or AMD FX 6300",
+    "Maximum_Processor": "Intel Core i7-4770K or AMD Ryzen 5 1500X",
+    "Minimum_Graphics": "Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4 GB)",
+    "Maximum_Graphics": "Nvidia GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8 GB)",
+    "Minimum_Storage": "70 GB available space",
+    "Maximum_Storage": "70 GB available space (SSD required)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 16,
+  "fields": {
+    "Requirement_Game": "Grand Theft Auto V",
+    "Minimum_OperatingSystem": "Windows 7 64-bit Service Pack 1, Windows 8.1 64-bit, or Windows 10 64-bit",
+    "Maximum_OperatingSystem": "Windows 10 64-bit, Windows 8.1 64-bit, or Windows 7 64-bit Service Pack 1",
+    "Minimum_RAM": "4 GB RAM",
+    "Maximum_RAM": "8 GB RAM",
+    "Minimum_Processor": "Intel Intel Core 2 Quad CPU Q6600 @ 2.40GHz or AMD Phenom 9850 Quad-Core Processor @ 2.5GHz",
+    "Maximum_Processor": " Intel Core i5 3470 @ 3.2GHz or AMD X8 FX-8350 @ 4GHz",
+    "Minimum_Graphics": "NVIDIA 9800 GT 1GB or AMD HD 4870 1GB (DirectX 10 support required)",
+    "Maximum_Graphics": "NVIDIA GTX 660 2GB or AMD HD 7870 2GB",
+    "Minimum_Storage": "72 GB available space (may exceed 100 GB with updates)",
+    "Maximum_Storage": "72 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 17,
+  "fields": {
+    "Requirement_Game": "UNCHARTED 4: A Thief's End",
+    "Minimum_OperatingSystem": "Windows 10 64-bit",
+    "Maximum_OperatingSystem": "Windows 10 64-bit",
+    "Minimum_RAM": "8 GB",
+    "Maximum_RAM": "16 GB",
+    "Minimum_Processor": "Intel Core i5-4430 or AMD Ryzen 3 1200",
+    "Maximum_Processor": " Intel Core i7-4770 or AMD Ryzen 5 1500X",
+    "Minimum_Graphics": "NVIDIA GTX 960 (4GB) or AMD R9 290X (4GB)",
+    "Maximum_Graphics": "NVIDIA GTX 1060 (6GB) or AMD RX 570 (4GB)",
+    "Minimum_Storage": "126 GB HDD",
+    "Maximum_Storage": "126 GB SSD"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 18,
+  "fields": {
+    "Requirement_Game": "The Witcher 3: Wild Hunt",
+    "Minimum_OperatingSystem": " Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-2500K or AMD Phenom II X4 940",
+    "Maximum_Processor": "Intel Core i7-3770 or AMD FX-8350",
+    "Minimum_Graphics": " NVIDIA GeForce GTX 770 or AMD Radeon R9 290 (2 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 or AMD Radeon RX 480 (4 GB VRAM)",
+    "Minimum_Storage": "50 GB available space",
+    "Maximum_Storage": "50 GB available space (SSD recommended)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 19,
+  "fields": {
+    "Requirement_Game": "Detroit: Become Human",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": " Intel Core i7-3770 or AMD FX-8350",
+    "Maximum_Processor": "Intel Core i5-8400 or AMD Ryzen 5 1600",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 780 or AMD Radeon HD 7950 (3 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 or AMD Radeon RX 580 (6 GB VRAM)",
+    "Minimum_Storage": "55 GB available space",
+    "Maximum_Storage": "55 GB available space (SSD recommended for smoother performance)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 20,
+  "fields": {
+    "Requirement_Game": "Batman: Arkham Knight",
+    "Minimum_OperatingSystem": "Windows 7/8.1/10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 7/8.1/10 (64-bit)",
+    "Minimum_RAM": "6 GB RAM",
+    "Maximum_RAM": "8 GB RAM",
+    "Minimum_Processor": "Intel Core i5-750 or AMD Phenom II X4 965",
+    "Maximum_Processor": "Intel Core i7-3770 or AMD FX-8350",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 660 or AMD Radeon HD 7870 (2 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 760 or AMD Radeon R9 280 (3 GB VRAM)",
+    "Minimum_Storage": "45 GB available space",
+    "Maximum_Storage": "55 GB available space (SSD recommended)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 21,
+  "fields": {
+    "Requirement_Game": "Alan Wake 2",
+    "Minimum_OperatingSystem": " Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "16 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-7600K or AMD Ryzen 5 2600",
+    "Maximum_Processor": " Intel Core i7-8700K or AMD Ryzen 5 3600XT",
+    "Minimum_Graphics": "NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600 (with DLSS/FSR 2 enabled)",
+    "Maximum_Graphics": "NVIDIA GeForce RTX 3060 or AMD Radeon RX 6700 XT",
+    "Minimum_Storage": "90 GB available space (SSD required)",
+    "Maximum_Storage": "90 GB available space (SSD required)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 22,
+  "fields": {
+    "Requirement_Game": "Mortal Kombat 11",
+    "Minimum_OperatingSystem": "Windows 7/8/10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": " 8 GB RAM",
+    "Maximum_RAM": "8 GB RAM",
+    "Minimum_Processor": "Intel Core i5-750 or AMD Phenom II X4 965",
+    "Maximum_Processor": "NVIDIA GeForce GTX 780 or AMD Radeon R9 290",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 670 or AMD Radeon HD 7950",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 780 or AMD Radeon R9 290",
+    "Minimum_Storage": "60 GB available space",
+    "Maximum_Storage": "60 GB available space (SSD recommended for faster performance)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 23,
+  "fields": {
+    "Requirement_Game": "Tekken 8",
+    "Minimum_OperatingSystem": "Windows 10 64-bit",
+    "Maximum_OperatingSystem": "Windows 10 64-bit",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-6600K / AMD Ryzen 5 1600",
+    "Maximum_Processor": "Intel Core i7-7700K / AMD Ryzen 5 2600",
+    "Minimum_Graphics": "Nvidia GeForce GTX 1050 Ti / AMD Radeon R9 380X",
+    "Maximum_Graphics": "Nvidia GeForce RTX 2070 / AMD Radeon RX 5700 XT",
+    "Minimum_Storage": "100 GB",
+    "Maximum_Storage": "100 GB"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 24,
+  "fields": {
+    "Requirement_Game": "Street Fighter 6",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-7500 or AMD Ryzen 3 1200",
+    "Maximum_Processor": "Intel Core i7-8700 or AMD Ryzen 5 3600",
+    "Minimum_Graphics": "NVIDIA GTX 1060 (6 GB VRAM) or AMD Radeon RX 580 (4 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA RTX 2070 or AMD Radeon RX 5700XT",
+    "Minimum_Storage": "60 GB available space",
+    "Maximum_Storage": "60 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 25,
+  "fields": {
+    "Requirement_Game": "Madden NFL 24",
+    "Minimum_OperatingSystem": " Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "10 GB RAM",
+    "Maximum_RAM": "12 GB RAM",
+    "Minimum_Processor": "Intel Core i5-6700K or AMD Ryzen 5 1600",
+    "Maximum_Processor": " Intel Core i7-8700 or AMD Ryzen 7 2700X",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 570",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1660 or AMD Radeon RX 5600 XT",
+    "Minimum_Storage": "50 GB available space",
+    "Maximum_Storage": "50 GB available space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 26,
+  "fields": {
+    "Requirement_Game": "UFL",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10/11 (64-bit)",
+    "Minimum_RAM": "8 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i5-4460 or AMD Ryzen 3 1200",
+    "Maximum_Processor": "Intel Core i5-10400 or AMD Ryzen 5 3600",
+    "Minimum_Graphics": " NVIDIA GeForce GTX 970 or AMD Radeon RX 570",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1660 Super or AMD Radeon RX 5600 XT",
+    "Minimum_Storage": "60 GB (SSD recommended)",
+    "Maximum_Storage": "60 GB (SSD required)"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 27,
+  "fields": {
+    "Requirement_Game": "Riders Republic",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit)",
+    "Maximum_OperatingSystem": "Windows 10 (64-bit)",
+    "Minimum_RAM": "8 GB",
+    "Maximum_RAM": "8 GB",
+    "Minimum_Processor": "Intel Core i5-4460 or AMD Ryzen 5 1400",
+    "Maximum_Processor": "Intel Core i7-4790 or AMD Ryzen 5 1600",
+    "Minimum_Graphics": "NVIDIA GeForce GTX 970 (4 GB) or AMD RX 470 (4 GB)",
+    "Maximum_Graphics": "NVIDIA GeForce GTX 1060 (6 GB) or AMD RX 570 (8 GB)",
+    "Minimum_Storage": "20 GB free space",
+    "Maximum_Storage": "20 GB free space"
+  }
+},
+{
+  "model": "GameApp.requirement_db",
+  "pk": 28,
+  "fields": {
+    "Requirement_Game": "The Last of Us (Part 1)",
+    "Minimum_OperatingSystem": "Windows 10 (64-bit) Version 1909 or newer",
+    "Maximum_OperatingSystem": " Windows 10 (64-bit) Version 1909 or newer",
+    "Minimum_RAM": "16 GB RAM",
+    "Maximum_RAM": "16 GB RAM",
+    "Minimum_Processor": "Intel Core i7-4770K or AMD Ryzen 5 1500X",
+    "Maximum_Processor": "Intel Core i7-8700 or AMD Ryzen 5 3600X",
+    "Minimum_Graphics": " NVIDIA GTX 1050 Ti or AMD Radeon RX 470 (4 GB VRAM)",
+    "Maximum_Graphics": "NVIDIA RTX 2070 Super or AMD Radeon RX 6600 XT (8 GB VRAM)",
+    "Minimum_Storage": "100 GB of available space(SSD)",
+    "Maximum_Storage": "100 GB of available space(SSD)"
+  }
+},
+{
+  "model": "GameApp.upcoming_db",
+  "pk": 2,
+  "fields": {
+    "Up_Cover_Image": "Games/ds2_sop2024_thumbnail_portrait.jpg",
+    "Up_Inside_Image": "Games/products_ds2-otb_mobile-logo.jpg",
+    "Up_Game_Name": "Death Stranding 2: On The Beach",
+    "Up_Tag_Line": "\"Reconnect the world, once again.\"",
+    "Up_Short_Description": "The sequel to Death Stranding, where Sam Porter Bridges embarks on a new journey across the post-apocalyptic world, facing even more mysterious beings and the continuation of the themes of isolation and connection.",
+    "Up_Summary": "In Death Stranding 2: On The Beach, players once again control Sam Porter Bridges as they navigate a world torn apart by the Death Stranding phenomenon. The game will expand on its predecessor’s open-world exploration mechanics, adding new characters and storylines. The narrative is expected to delve deeper into the mysteries surrounding the \"Beaches\" and the connection between life and death, continuing Kojima’s exploration of social themes through unique gameplay.",
+    "Up_Genre": "Action,Adventure,Sci-Fi",
+    "Up_Game_Style": "Stealth,Exploration,Narrative-driven",
+    "Up_Platform": "PlayStation 5,Expected release on PC",
+    "Up_Release_Date": "Expected in 2024 or Later",
+    "Up_Game_Mode": "Single Player",
+    "Up_Developer": "Kojima Productions",
+    "Up_Publisher": "Sony Interactive Entertainment",
+    "Up_Age_Rating": "17+",
+    "Up_Play_Time": "Approximately 30-50 hours",
+    "Up_Overall_Rating": 10,
+    "Up_Trailer": "Trailers/Death_Stranding_2_Working_Title_-_TGA_2022_Teaser_Trailer__PS5_Games.mp4"
+  }
+},
+{
+  "model": "GameApp.upcoming_db",
+  "pk": 3,
+  "fields": {
+    "Up_Cover_Image": "hq720.jpg",
+    "Up_Inside_Image": "Games/rockstargames-website-wide-gtavi-banner-mobile.png",
+    "Up_Game_Name": "Grand Theft Auto VI",
+    "Up_Tag_Line": "\"Reimagine the American Dream.\"",
+    "Up_Short_Description": "The next installment in Rockstar Games’ iconic open-world franchise, Grand Theft Auto VI promises a revolutionary experience with a sprawling new map, dynamic storytelling, and an immersive world unlike any before.",
+    "Up_Summary": "Set in a modernized version of Vice City and other surrounding areas, Grand Theft Auto VI takes players on a journey through crime, ambition, and betrayal in a fully reimagined open world. The game is expected to feature two protagonists, introducing a narrative influenced by shifting alliances and personal motivations. With Rockstar's cutting-edge RAGE engine, GTA VI will showcase unparalleled realism, from character animations to environmental interactions. Fans can anticipate an expansion of multiplayer modes and a deeper single-player campaign with innovative gameplay mechanics.",
+    "Up_Genre": "Action,Adventure,Crime,Sandbox",
+    "Up_Game_Style": "Story-driven,Sandbox Exploration",
+    "Up_Platform": "PlayStation 5,PC (Expected)",
+    "Up_Release_Date": "Expected in 2025 or Later",
+    "Up_Game_Mode": "Single Player, Multiplayer",
+    "Up_Developer": "Rockstar Games",
+    "Up_Publisher": "Rockstar Games",
+    "Up_Age_Rating": "18+",
+    "Up_Play_Time": "Approximately 40-60 hours",
+    "Up_Overall_Rating": 10,
+    "Up_Trailer": "Trailers/Grand_Theft_Auto_VI_Trailer_1.mp4"
+  }
+},
+{
+  "model": "GameApp.upcoming_db",
+  "pk": 4,
+  "fields": {
+    "Up_Cover_Image": "Games/9c1361a684d253c9917b0be94b60b6f2e4add431.jpg",
+    "Up_Inside_Image": "Games/thumb-1920-1266780.jpg",
+    "Up_Game_Name": "Dune: Awakening",
+    "Up_Tag_Line": "\"Survive the desert, conquer the future.\"",
+    "Up_Short_Description": "Dune: Awakening is an open-world survival MMO set in the iconic Dune universe, where players must navigate the harsh desert planet of Arrakis, fight for control of the valuable spice Melange, and become a legend in the fight for power.",
+    "Up_Summary": "Dune: Awakening immerses players in the unforgiving world of Arrakis, where they must adapt to the challenges of survival, politics, and warfare. Set in a vast open world, the game features dynamic weather systems, including deadly sandstorms, and a deep crafting system focused on resource management. Players can join factions, engage in large-scale battles for control of spice production, and explore Arrakis’ treacherous landscapes. The game blends elements of survival, strategy, and MMO mechanics, offering both solo and multiplayer experiences. Players can choose their own path, from noble rulers to merciless conquerors.",
+    "Up_Genre": "Action,Survival,MMO,Sci-Fi",
+    "Up_Game_Style": "Open World,Crafting,Strategy",
+    "Up_Platform": "PlayStation 5,PC (Expected)",
+    "Up_Release_Date": "Expected to be in 2024 or later",
+    "Up_Game_Mode": "Single Player, Multiplayer",
+    "Up_Developer": "Funcom",
+    "Up_Publisher": "Funcom",
+    "Up_Age_Rating": "17+",
+    "Up_Play_Time": "Approx 50-100 hours(campaign)",
+    "Up_Overall_Rating": 9,
+    "Up_Trailer": "Trailers/Dune__Awakening_-_Official_Story_Cinematic_Reveal_Trailer.mp4"
+  }
+},
+{
+  "model": "GameApp.upcoming_db",
+  "pk": 5,
+  "fields": {
+    "Up_Cover_Image": "Games/ghost-of-yotei-game-1920x1080-19048.jpg",
+    "Up_Inside_Image": "phone-wallpaper-v0-s9n5nbgrhzqd1.webp",
+    "Up_Game_Name": "Ghost of Yōtei",
+    "Up_Tag_Line": "\"Face the Shadows of the Mountain.\"",
+    "Up_Short_Description": "Step into the shoes of a wandering samurai on a quest for redemption, battling enemies and unraveling the mysteries of Mount Yōtei in a stunning open-world setting.",
+    "Up_Summary": "Ghost of Yōtei combines fast-paced sword combat with stealth mechanics in a visually breathtaking open-world inspired by feudal Japan. Players take on the role of a masterless samurai who must defend the villages at the base of Mount Yōtei while uncovering the secrets of a cursed mountain. The game offers an immersive story, engaging side quests, and dynamic weather systems that impact gameplay.",
+    "Up_Genre": "Action,Adventure ",
+    "Up_Game_Style": "Third-Person with stealth and combat",
+    "Up_Platform": "PS5,PC,Xbox Series X/S",
+    "Up_Release_Date": "Expected in 2025 or Later",
+    "Up_Game_Mode": "Single Player",
+    "Up_Developer": "Yōtei Studio",
+    "Up_Publisher": "Yōtei Interactive",
+    "Up_Age_Rating": "18+",
+    "Up_Play_Time": "Main Story:~25-30 hours",
+    "Up_Overall_Rating": 10,
+    "Up_Trailer": "Trailers/Ghost_of_Yōtei_-_Announce_Trailer__PS5_Games.mp4"
+  }
+},
+{
+  "model": "GameApp.fan_favorite_db",
+  "pk": 1,
+  "fields": {
+    "Fan_Game": "Red Dead Redemption 2",
+    "Fan_Created": "2024-12-01T17:14:11.548Z",
+    "Fan_Description": "Coming in strong at #1, Red Dead Redemption 2 continues to steal the spotlight this month, thanks to its unparalleled blend of immersive storytelling, breathtaking visuals, and innovative open-world gameplay. From the moment you step into the boots of Arthur Morgan, you’re thrown into a world of hard choices, emotional depth, and a beautiful, yet brutal, Wild West.\r\nThis game isn't just about action—it's about the stories you create, the characters you meet, and the consequences of your actions. Whether it’s the high-stakes heists, the heart-wrenching moments with your gang, or the thrill of exploring vast landscapes, Red Dead Redemption 2 offers an experience that never gets old.",
+    "Fan_Image": "fan_favorite/red-dead-redemption-2-characters-uhd-4k-wallpaper.jpg",
+    "Reason1": "Masterpiece of Storytelling :  Arthur’s journey is one you won’t forget.",
+    "Reason2": "Exploration Like No Other :  Every sunset in the Wild West feels magical.",
+    "Reason3": "Endless Action :  Whether you’re hunting or robbing a train, there’s always something to do."
+  }
+},
+{
+  "model": "GameApp.fan_favorite_db",
+  "pk": 2,
+  "fields": {
+    "Fan_Game": "Cyberpunk 2077",
+    "Fan_Created": "2024-12-01T17:38:25.273Z",
+    "Fan_Description": "Cyberpunk 2077 has climbed to the #2 spot this month, solidifying its place as one of the most exciting and immersive open-world RPGs of our time. After its rocky launch, CD Projekt Red has worked tirelessly to improve and expand the game, and it shows. Now, with enhanced visuals, expanded content, and a deeply engaging storyline, Cyberpunk 2077 has become a game that’s hard to put down.After the rough start at launch, CD Projekt Red has done a phenomenal job of turning things around, and now, this open-world RPG is one of the most exciting, immersive experiences you can find.",
+    "Fan_Image": "fan_favorite/Cyberpunk_2077_1-230325-105012.jpg",
+    "Reason1": "Choices That Matter : Your decisions shape the world around you, from how you handle missions to your relationships with key characters. It’s a story that reacts to YOU.",
+    "Reason2": "Cyberware for Days : Upgrade your character with all sorts of futuristic cybernetic enhancements—whether it’s increasing your reflexes or installing a powerful new weapon, the options are endless.",
+    "Reason3": "Gigs & Side Jobs : The main story is awesome, but the side gigs and jobs are where the game really shines. Some will have you exploring the deep stories of Night City, while others are full of action-packed moments."
+  }
+},
+{
+  "model": "GameApp.fan_favorite_db",
+  "pk": 3,
+  "fields": {
+    "Fan_Game": "Grand Theft Auto V",
+    "Fan_Created": "2024-12-01T17:49:19.569Z",
+    "Fan_Description": "Grand Theft Auto V grabs #3 spot as continues to captivate gamers around the world thanks to its compelling mix of action, story, and freedom. Released in 2013, GTA V still holds its place as one of the best-selling games of all time. Whether you’re looking for an exciting single-player story or a chaotic online multiplayer experience, GTA V offers it all. Its open-world design gives you the freedom to roam, explore, and create your own experiences, all set in the vibrant, crime-filled world of Los Santos.",
+    "Fan_Image": "fan_favorite/9a2c1c428752523b0a8c6a5cb65a386e.jpg",
+    "Reason1": "Massive Open World : The sprawling city of Los Santos and its surrounding areas offer an unparalleled level of detail, allowing players to explore, rob, race, or just enjoy the scenery.",
+    "Reason2": "GTA Online : The ever-expanding multiplayer mode lets players create their own adventures, from car races to massive gunfights and everything in between.",
+    "Reason3": "Heists and Mayhem : Plan and execute heists with friends or take on solo missions. The game never runs out of action-packed moments."
+  }
+},
+{
+  "model": "GameApp.fan_favorite_db",
+  "pk": 4,
+  "fields": {
+    "Fan_Game": "Minecraft",
+    "Fan_Created": "2024-12-01T17:56:20.143Z",
+    "Fan_Description": "Minecraft at #4 spot  has solidified itself as one of the most iconic games of all time, with a massive global fanbase that spans all ages. Whether you're a builder, explorer, or fighter, Minecraft's blocky world provides endless opportunities for creativity and adventure. Originally released in 2011, it has evolved over the years, with constant updates adding new mechanics, mobs, and biomes, ensuring that the game feels fresh every time you log in. Its simple mechanics and endless possibilities make it a game that can be played for hours, days, or even years.",
+    "Fan_Image": "fan_favorite/minecraft-landscape-8h44acokruk5k6fh.jpg",
+    "Reason1": "Endless Creativity : The true beauty of Minecraft lies in its ability to let players create anything they can imagine. From building epic castles to crafting intricate redstone contraptions, the possibilities are as vast as the world itself.",
+    "Reason2": "Multiplayer Adventures : Whether you’re playing with friends or joining massive public servers, Minecraft’s multiplayer experience is one of its strongest features.",
+    "Reason3": "Educational Value : Beyond the fun of gameplay, Minecraft is also a tool for learning. Teachers around the world use it to teach subjects such as mathematics, history, and even coding."
+  }
+},
+{
+  "model": "GameApp.fan_favorite_db",
+  "pk": 5,
+  "fields": {
+    "Fan_Game": "Valorant",
+    "Fan_Created": "2024-12-01T18:04:42.744Z",
+    "Fan_Description": "Valorant placed #5 spot , developed by Riot Games, has quickly become one of the top tactical shooters in the competitive gaming scene since its release in 2020. Combining elements of traditional first-person shooters with hero-based abilities, Valorant offers a fresh take on the genre, attracting a huge following of both casual and professional gamers. Its tight gunplay, strategic depth, and team-oriented gameplay make it a highly addictive and rewarding experience for players who enjoy both competition and teamwork.",
+    "Fan_Image": "fan_favorite/valorant-agents-1920-x-1080-wallpaper-rik8b862ck8ock49.jpg",
+    "Reason1": "Precision gunplay : Every shot counts, making the game incredibly satisfying for tactical players.",
+    "Reason2": "Unique agents : Each character brings something new to the table, offering a fresh twist on strategy.",
+    "Reason3": "E-sports ready : Whether you’re playing casually or looking to compete, Valorant offers something for every level of player."
+  }
+},
+{
+  "model": "WebApp.contact_db",
+  "pk": 1,
+  "fields": {
+    "Name": "Arun",
+    "Mobile": "1122083456",
+    "Email": "arun@gmail.com",
+    "City": "Kollam",
+    "Message": "Thanks for the review!"
+  }
+},
+{
+  "model": "WebApp.contact_db",
+  "pk": 7,
+  "fields": {
+    "Name": "varun",
+    "Mobile": "112208345",
+    "Email": "arun@gmail.com",
+    "City": "Kollam",
+    "Message": "good"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 5,
+  "fields": {
+    "Profile_Image": "user_image/cyberpunk.jpg",
+    "Profile_Image_URL": null,
+    "Name": "Manu",
+    "Email": "manu@gmail.com",
+    "Mobile": "1122083456",
+    "Password": "manu",
+    "Re_Password": "manu"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 7,
+  "fields": {
+    "Profile_Image": "user_image/default_profile_image_hY9sY0L.png",
+    "Profile_Image_URL": null,
+    "Name": "Varun",
+    "Email": "arun@gmail.com",
+    "Mobile": "9897654321",
+    "Password": "varun",
+    "Re_Password": "varun"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 12,
+  "fields": {
+    "Profile_Image": "user_image/Cyberpunk_2077_1-230325-105012_tQmh8uJ.jpg",
+    "Profile_Image_URL": "",
+    "Name": "Vijay",
+    "Email": "vijay@gmail.com",
+    "Mobile": "12345678",
+    "Password": "vijay",
+    "Re_Password": "vijay"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 13,
+  "fields": {
+    "Profile_Image": "user_image/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "Profile_Image_URL": null,
+    "Name": "Achu",
+    "Email": "achu@gmail.com",
+    "Mobile": "1122083456",
+    "Password": "achu",
+    "Re_Password": "achu"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 15,
+  "fields": {
+    "Profile_Image": "",
+    "Profile_Image_URL": null,
+    "Name": "Andrew",
+    "Email": "andrew@gmail.com",
+    "Mobile": "1122083456",
+    "Password": "andrew",
+    "Re_Password": "andrew"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 16,
+  "fields": {
+    "Profile_Image": "",
+    "Profile_Image_URL": null,
+    "Name": "Morgan",
+    "Email": "morgan@gmail.com",
+    "Mobile": "9807654321",
+    "Password": "morgan",
+    "Re_Password": "morgan"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 20,
+  "fields": {
+    "Profile_Image": "user_image/the-last-of-us-naughty-dog-playstation-3-joel-wallpaper-preview.jpg",
+    "Profile_Image_URL": null,
+    "Name": "Anandhu",
+    "Email": "anandu@gmail.com",
+    "Mobile": "9087654321",
+    "Password": "anandu123",
+    "Re_Password": "anandu123"
+  }
+},
+{
+  "model": "WebApp.login_db",
+  "pk": 22,
+  "fields": {
+    "Profile_Image": "user_image/luke-street-fighter-6-1280x1280-9573.png",
+    "Profile_Image_URL": null,
+    "Name": "Alex Klor",
+    "Email": "alex@gmail.com",
+    "Mobile": "1345678906",
+    "Password": "Alex@1234",
+    "Re_Password": "Alex@1234"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 1,
+  "fields": {
+    "Game_Name": "Marvel's Spider-Man: Miles Morales",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-16T15:27:20.894Z",
+    "Comment": "Its a nice game!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 3,
+  "fields": {
+    "Game_Name": "God of War: Ragnarok",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-16T15:39:31.224Z",
+    "Comment": "Kratos! what an amazing character"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 4,
+  "fields": {
+    "Game_Name": "Dying Light 2: Stay Human",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-16T15:43:49.609Z",
+    "Comment": "Night mode mission are very scary"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 5,
+  "fields": {
+    "Game_Name": "Cyberpunk 2077",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-16T15:44:53.612Z",
+    "Comment": "Cdk really did a magic here....."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 6,
+  "fields": {
+    "Game_Name": "Dying Light 2: Stay Human",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-16T15:45:59.866Z",
+    "Comment": "I think dl2 is more detailed than dl1..."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 7,
+  "fields": {
+    "Game_Name": "Resident Evil Village",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-16T17:06:32.027Z",
+    "Comment": "Excellent story!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 8,
+  "fields": {
+    "Game_Name": "Red Dead Redemption 2",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-16T17:20:12.284Z",
+    "Comment": "One word Masterpiece!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 9,
+  "fields": {
+    "Game_Name": "Dragon Ball FighterZ",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-16T17:29:46.166Z",
+    "Comment": "This game is a time killer.."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 10,
+  "fields": {
+    "Game_Name": "Horizon Forbidden West",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-16T17:43:23.677Z",
+    "Comment": "graphics of this game is outstanding.......lots of imporvement to that of first game zero dawn\r\n"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 11,
+  "fields": {
+    "Game_Name": "Red Dead Redemption 2",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-16T17:44:45.556Z",
+    "Comment": "As all know another masterpiece from rockstar"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 12,
+  "fields": {
+    "Game_Name": "The Witcher 3: Wild Hunt",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-17T15:13:25.780Z",
+    "Comment": "better than its webseries"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 13,
+  "fields": {
+    "Game_Name": "Dying Light 2: Stay Human",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-18T15:01:53.232Z",
+    "Comment": "volatiles are scary...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 14,
+  "fields": {
+    "Game_Name": "Days Gone",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-18T15:02:52.220Z",
+    "Comment": "one of best zombie game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 15,
+  "fields": {
+    "Game_Name": "Dragon Ball FighterZ",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-18T15:54:03.808Z",
+    "Comment": "better graphics"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 16,
+  "fields": {
+    "Game_Name": "Mortal Kombat 11",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-19T06:26:21.090Z",
+    "Comment": "best fighting game ever"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 17,
+  "fields": {
+    "Game_Name": "Elden Ring",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-20T14:02:33.291Z",
+    "Comment": "bro this game is insane...!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 18,
+  "fields": {
+    "Game_Name": "Days Gone",
+    "User_Image": "/media/user_image/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "User_Name": "Achu",
+    "Created_Time": "2024-11-20T14:15:56.701Z",
+    "Comment": "an underated zombie game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 19,
+  "fields": {
+    "Game_Name": "God of War: Ragnarok",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-21T06:56:50.184Z",
+    "Comment": "ghost of sparta"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 20,
+  "fields": {
+    "Game_Name": "Grand Theft Auto VI",
+    "User_Image": "/media/user_image/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "User_Name": "Achu",
+    "Created_Time": "2024-11-22T06:08:18.126Z",
+    "Comment": "Everyone on this planet is waiting for this masterpiece"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 21,
+  "fields": {
+    "Game_Name": "God of War: Ragnarok",
+    "User_Image": "/media/user_image/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "User_Name": "Achu",
+    "Created_Time": "2024-11-22T06:09:54.330Z",
+    "Comment": "epic boss fight btw kratos and thor"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 22,
+  "fields": {
+    "Game_Name": "Death Stranding 2: On The Beach",
+    "User_Image": "/media/user_image/ProjectThumbnail-BatmanArkhamKnight.jpg",
+    "User_Name": "Achu",
+    "Created_Time": "2024-11-22T06:12:03.036Z",
+    "Comment": "ds1 is an absolute cinematic vibe so we can except absolute materpiece from ds2"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 23,
+  "fields": {
+    "Game_Name": "Grand Theft Auto VI",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-22T06:15:23.492Z",
+    "Comment": "i hope they would release it in 2025, am tired of waiting....!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 24,
+  "fields": {
+    "Game_Name": "Naruto x Boruto: Ultimate Ninja Storm Connections",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-22T06:17:12.767Z",
+    "Comment": "guys! best game for naruto fans!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 25,
+  "fields": {
+    "Game_Name": "Stalker 2: Heart of Chornobyl",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-22T06:20:51.927Z",
+    "Comment": "from the looks of it this game would be a hit"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 33,
+  "fields": {
+    "Game_Name": "Cyberpunk 2077",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T16:33:10.834Z",
+    "Comment": "good game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 34,
+  "fields": {
+    "Game_Name": "Marvel's Spider-Man: Miles Morales",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-22T16:36:34.069Z",
+    "Comment": "good game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 35,
+  "fields": {
+    "Game_Name": "Marvel's Spider-Man: Miles Morales",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T16:37:21.912Z",
+    "Comment": "not good as spider-man1"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 36,
+  "fields": {
+    "Game_Name": "Red Dead Redemption 2",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:00:53.662Z",
+    "Comment": "Its story is better than now a days films.."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 37,
+  "fields": {
+    "Game_Name": "Death Stranding 2: On The Beach",
+    "User_Image": null,
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:03:32.838Z",
+    "Comment": "can't wait to play these masterpiece"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 40,
+  "fields": {
+    "Game_Name": "Grand Theft Auto VI",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:10:41.615Z",
+    "Comment": "we are all waiting bro...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 41,
+  "fields": {
+    "Game_Name": "Dune: Awakening",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:13:22.698Z",
+    "Comment": "hmmm sounds interesting........"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 42,
+  "fields": {
+    "Game_Name": "Dune: Awakening",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Varun",
+    "Created_Time": "2024-11-22T17:15:39.566Z",
+    "Comment": "2025 will be a grand year for gamers like us...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 43,
+  "fields": {
+    "Game_Name": "Alan Wake 2",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-22T17:31:45.092Z",
+    "Comment": "graphics of this game is out of level"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 44,
+  "fields": {
+    "Game_Name": "Cyberpunk 2077",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:37:06.847Z",
+    "Comment": "can anybody here can suggest me how to get an alternative ending..plz..."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 45,
+  "fields": {
+    "Game_Name": "Elden Ring",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Andrew",
+    "Created_Time": "2024-11-22T17:38:08.576Z",
+    "Comment": "this game is developed by aliens....."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 46,
+  "fields": {
+    "Game_Name": "Grand Theft Auto VI",
+    "User_Image": "/media/user_image/cyberpunk.jpg",
+    "User_Name": "Manu",
+    "Created_Time": "2024-11-22T17:42:09.486Z",
+    "Comment": "I hope i will play this before dying..."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 47,
+  "fields": {
+    "Game_Name": "Alan Wake 2",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Morgan",
+    "Created_Time": "2024-11-23T08:28:36.909Z",
+    "Comment": "great transition from alan wake 1 to alan wake 2"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 48,
+  "fields": {
+    "Game_Name": "Stalker 2: Heart of Chornobyl",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Morgan",
+    "Created_Time": "2024-11-23T08:29:39.479Z",
+    "Comment": "from my source i heard that this game would release in january 2025"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 49,
+  "fields": {
+    "Game_Name": "Detroit: Become Human",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Morgan",
+    "Created_Time": "2024-11-24T19:22:35.929Z",
+    "Comment": "Ai used in this game is out of league...\r\n"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 50,
+  "fields": {
+    "Game_Name": "Detroit: Become Human",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-24T19:24:36.667Z",
+    "Comment": "this game has so many ending and i think i got a very bad ending\r\n"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 51,
+  "fields": {
+    "Game_Name": "Ghost of Yōtei",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-11-25T14:47:37.826Z",
+    "Comment": "ahhh finally something to look after ghost of tsusima"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 52,
+  "fields": {
+    "Game_Name": "Death Stranding 2: On The Beach",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Morgan",
+    "Created_Time": "2024-12-01T19:04:30.019Z",
+    "Comment": "Kojima Productions never disappoints....\r\n"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 53,
+  "fields": {
+    "Game_Name": "Red Dead Redemption 2",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-12-11T11:40:25.444Z",
+    "Comment": "This game's end even makes a grown up man cry...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 54,
+  "fields": {
+    "Game_Name": "NBA 2K24",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-12-16T15:32:02.361Z",
+    "Comment": "what an grpahics...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 55,
+  "fields": {
+    "Game_Name": "NBA 2K24",
+    "User_Image": "/media/user_image/default_profile_image_hY9sY0L.png",
+    "User_Name": "Morgan",
+    "Created_Time": "2024-12-16T15:34:00.873Z",
+    "Comment": "one of the best game who loves basket ball"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 56,
+  "fields": {
+    "Game_Name": "Cyberpunk 2077",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-12-18T14:31:56.808Z",
+    "Comment": "bro try doing some side missions..."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 57,
+  "fields": {
+    "Game_Name": "Dune: Awakening",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2024-12-18T14:46:43.690Z",
+    "Comment": "i don't think this game would release in 2025"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 58,
+  "fields": {
+    "Game_Name": "Horizon Forbidden West",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2025-01-22T13:38:16.595Z",
+    "Comment": "good story"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 59,
+  "fields": {
+    "Game_Name": "Grand Theft Auto VI",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2025-01-26T15:04:03.455Z",
+    "Comment": "Rockstar is cooking something big!!"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 60,
+  "fields": {
+    "Game_Name": "God of War: Ragnarok",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2025-01-27T11:06:42.887Z",
+    "Comment": "good game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 61,
+  "fields": {
+    "Game_Name": "Red Dead Redemption 2",
+    "User_Image": "/media/user_image/wallpapersden.com_marvel-s-spider-man-miles-morales-2022_1920x1080.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2025-07-30T08:13:19.362Z",
+    "Comment": "good game"
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 62,
+  "fields": {
+    "Game_Name": "Days Gone",
+    "User_Image": "/media/user_image/rdr2.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2026-06-30T06:17:53.135Z",
+    "Comment": "underrated game...."
+  }
+},
+{
+  "model": "WebApp.comment_db",
+  "pk": 63,
+  "fields": {
+    "Game_Name": "God of War: Ragnarok",
+    "User_Image": "/media/user_image/minecraft-landscape-8h44acokruk5k6fh.jpg",
+    "User_Name": "Vijay",
+    "Created_Time": "2026-07-01T04:54:52.476Z",
+    "Comment": "waiting for GOW Laufey\r\n"
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 34,
+  "fields": {
+    "Fav_Cover": "/media/Games/mL2362_1024x1024.webp",
+    "Fav_Gname": "Red Dead Redemption 2",
+    "Fav_Age": "18+",
+    "Fav_Overall": 10,
+    "Fav_User": "Achu",
+    "Fav_ID": 7
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 42,
+  "fields": {
+    "Fav_Cover": "/media/Horizon-Forbidden-West-Complete-Edition-PC-1.webp",
+    "Fav_Gname": "Horizon Forbidden West",
+    "Fav_Age": "16+",
+    "Fav_Overall": 9,
+    "Fav_User": "Varun",
+    "Fav_ID": 8
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 43,
+  "fields": {
+    "Fav_Cover": "/media/uncharted-4-gd453ze133ye81yy.jpg",
+    "Fav_Gname": "UNCHARTED 4: A Thief's End",
+    "Fav_Age": "13+",
+    "Fav_Overall": 10,
+    "Fav_User": "Varun",
+    "Fav_ID": 16
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 44,
+  "fields": {
+    "Fav_Cover": "/media/Games/dyl.jpg",
+    "Fav_Gname": "Dying Light 2: Stay Human",
+    "Fav_Age": "18+",
+    "Fav_Overall": 8,
+    "Fav_User": "Andrew",
+    "Fav_ID": 4
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 45,
+  "fields": {
+    "Fav_Cover": "/media/Games/mL2362_1024x1024.webp",
+    "Fav_Gname": "Red Dead Redemption 2",
+    "Fav_Age": "18+",
+    "Fav_Overall": 10,
+    "Fav_User": "Andrew",
+    "Fav_ID": 7
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 46,
+  "fields": {
+    "Fav_Cover": "/media/Games/dyl.jpg",
+    "Fav_Gname": "Dying Light 2: Stay Human",
+    "Fav_Age": "18+",
+    "Fav_Overall": 8,
+    "Fav_User": "Morgan",
+    "Fav_ID": 4
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 47,
+  "fields": {
+    "Fav_Cover": "/media/Horizon-Forbidden-West-Complete-Edition-PC-1.webp",
+    "Fav_Gname": "Horizon Forbidden West",
+    "Fav_Age": "16+",
+    "Fav_Overall": 9,
+    "Fav_User": "Morgan",
+    "Fav_ID": 8
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 144,
+  "fields": {
+    "Fav_Cover": "/media/Horizon-Forbidden-West-Complete-Edition-PC-1.webp",
+    "Fav_Gname": "Horizon Forbidden West",
+    "Fav_Age": "16+",
+    "Fav_Overall": 9,
+    "Fav_User": "Manu",
+    "Fav_ID": 8
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 145,
+  "fields": {
+    "Fav_Cover": "/media/Games/143490-1080x1920-mobile-1080p-resident-evil-village-wallpaper-image.jpg",
+    "Fav_Gname": "Resident Evil Village",
+    "Fav_Age": "18+",
+    "Fav_Overall": 9,
+    "Fav_User": "Manu",
+    "Fav_ID": 9
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 146,
+  "fields": {
+    "Fav_Cover": "/media/HD-wallpaper-miles-morales-miles-morales-ps5-spider-man.jpg",
+    "Fav_Gname": "Marvel's Spider-Man: Miles Morales",
+    "Fav_Age": "13+",
+    "Fav_Overall": 9,
+    "Fav_User": "Manu",
+    "Fav_ID": 2
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 151,
+  "fields": {
+    "Fav_Cover": "/media/HD-wallpaper-miles-morales-miles-morales-ps5-spider-man.jpg",
+    "Fav_Gname": "Marvel's Spider-Man: Miles Morales",
+    "Fav_Age": "13+",
+    "Fav_Overall": 9,
+    "Fav_User": "Vijay",
+    "Fav_ID": 2
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 152,
+  "fields": {
+    "Fav_Cover": "/media/Cover-art-6.webp",
+    "Fav_Gname": "Cyberpunk 2077",
+    "Fav_Age": "18+",
+    "Fav_Overall": 10,
+    "Fav_User": "Vijay",
+    "Fav_ID": 3
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 154,
+  "fields": {
+    "Fav_Cover": "/media/Games/the-last-of-us-naughty-dog-playstation-3-joel-wallpaper-preview.jpg",
+    "Fav_Gname": "The Last of Us (Part 1)",
+    "Fav_Age": "18+",
+    "Fav_Overall": 10,
+    "Fav_User": "Vijay",
+    "Fav_ID": 27
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 157,
+  "fields": {
+    "Fav_Cover": "/media/Games/dyl.jpg",
+    "Fav_Gname": "Dying Light 2: Stay Human",
+    "Fav_Age": "18+",
+    "Fav_Overall": 8,
+    "Fav_User": "Anandhu",
+    "Fav_ID": 4
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 160,
+  "fields": {
+    "Fav_Cover": "/media/Games/mL2362_1024x1024.webp",
+    "Fav_Gname": "Red Dead Redemption 2",
+    "Fav_Age": "18+",
+    "Fav_Overall": 10,
+    "Fav_User": "Vijay",
+    "Fav_ID": 7
+  }
+},
+{
+  "model": "WebApp.favorite_db",
+  "pk": 162,
+  "fields": {
+    "Fav_Cover": "/media/Games/dyl.jpg",
+    "Fav_Gname": "Dying Light 2: Stay Human",
+    "Fav_Age": "18+",
+    "Fav_Overall": 8,
+    "Fav_User": "Vijay",
+    "Fav_ID": 4
+  }
+},
+{
+  "model": "WebApp.blog_share",
+  "pk": 2,
+  "fields": {
+    "Blog_Name": "Vijay",
+    "Blog_Email": "vijay@gmail.com",
+    "Blog_Fav": "Red Dead Redemption 2",
+    "Blog_Feedback": "First of all game is masterpiecie which include every element a game can provide, i even think this game even made tears whoever played this game and story of the game is better than that of the cinemas now a day's,character(Author morgan) able to find a place in every gamers heart.In case of graphics,story etc.. this game is worth choice..\r\n"
+  }
+}
+]
